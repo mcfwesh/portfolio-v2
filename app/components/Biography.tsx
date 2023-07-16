@@ -30,7 +30,7 @@ const AnimatedNumbers = ({ value }: { value: any }) => {
 const Biography = () => {
   return (
     <Section title="About" sectionId="about">
-      <div className="flex flex-col  justify-between space-y-6  md:flex-row">
+      <div className="flex flex-col  justify-center gap-x-16 space-y-6  md:flex-row">
         <div className="flex flex-col   md:w-1/2 ">
           <h4 className=" font-bold text-gray-500  md:text-xl">Biography</h4>
           {config.about.description.map((paragraph, index) => (

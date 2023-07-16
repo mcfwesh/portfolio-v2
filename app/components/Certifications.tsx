@@ -8,7 +8,7 @@ import Link from "next/link";
 const Certifications = () => {
   return (
     <Section sectionId="certifications" title="Certifications">
-      <div className="grid grid-cols-1 gap-12 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
         {config.certifications.map((certification, index) => (
           <div
             key={index}

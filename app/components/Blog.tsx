@@ -20,7 +20,7 @@ const Blog = ({
     <>
       <Section title="Blog Posts" sectionId="blog-posts">
         {categorisedPosts.map((category, index) => (
-          <div key={index}>
+          <div className="container" key={index}>
             <div className="flex items-center  space-x-6">
               {category.title === "Cloud" ? <CloudIcon /> : <CodeIcon />}
               <h2 className="text-center text-2xl md:text-4xl">

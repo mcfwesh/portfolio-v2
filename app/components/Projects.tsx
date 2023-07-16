@@ -38,14 +38,14 @@ const Projects = () => {
     <>
       <Section title="Projects" sectionId="projects">
         {config.projects.map((group, index) => (
-          <div key={index}>
+          <div className="container flex flex-col justify-center" key={index}>
             <div className="flex items-center space-x-6">
               {<group.logo />}
               <h2 className="text-2xl md:text-4xl">{group.title}</h2>
             </div>
             <motion.div
               variants={list}
-              className="mx-auto my-16 grid grid-cols-1 gap-12 lg:grid-cols-3"
+              className="mx-auto my-16 grid grid-cols-1 gap-12 lg:grid-cols-2"
             >
               {group.projects.map((project, index) => (
                 <motion.div
