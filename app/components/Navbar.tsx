@@ -55,6 +55,7 @@ const Navbar = () => {
                   "underline decoration-sky-600 decoration-2 underline-offset-4"
                 } group my-1 font-bold transition duration-300 hover:text-sky-600  active:text-light  dark:hover:text-sky-600 md:mx-4 md:my-0`}
                 href={item.url}
+                key={item.url}
               >
                 {item.text}
               </Link>
@@ -113,6 +114,7 @@ const Navbar = () => {
                     } group my-1 text-2xl font-bold transition duration-300 hover:text-sky-600  dark:hover:text-sky-600 md:mx-4 md:my-0`}
                     href={item.url}
                     onClick={() => setShowMobileMenu(false)}
+                    key={item.url}
                   >
                     {item.text}
                   </Link>

@@ -36,8 +36,11 @@ const Hero = () => {
   return (
     <>
       <TransitionEffect />
-      <section id="hero" className="flex w-full items-center">
-        <div className="flex w-full flex-col items-center justify-between   space-y-6 md:flex-row">
+      <section
+        id="hero"
+        className="mx-auto flex w-full items-center justify-center"
+      >
+        <div className="flex w-full flex-col items-center justify-between  space-y-6 md:flex-row">
           <div className="relative  w-1/2 md:w-1/4">
             <svg
               className="dar z-10 rotate-[103] transform  animate-[spin_12s_linear_infinite] fill-dark font-bold uppercase text-transparent dark:fill-light "
