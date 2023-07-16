@@ -71,7 +71,7 @@ const Hero = () => {
               className="absolute left-[50%] top-[50%] h-[80%] w-[80%] translate-x-[-50%] translate-y-[-50%] transform rounded-full bg-sky-500  text-center font-bold text-light  hover:bg-sky-600"
               href={config.hero.ctaSpinner.url}
             >
-              <span className="absolute left-[50%] top-[50%] w-full translate-x-[-50%] translate-y-[-50%] transform text-center text-2xl">
+              <span className="absolute left-[50%] top-[50%] w-full translate-x-[-50%] translate-y-[-50%] transform text-center text-2xl md:text-4xl">
                 {config.hero.ctaSpinner.innerText}
               </span>
             </Link>
