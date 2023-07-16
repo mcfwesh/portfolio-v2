@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 const AnimatePages = ({ children }: { children: React.ReactNode }) => {
   const pathname = usePathname();
   return (
-    <AnimatePresence initial={false} key={pathname}>
+    <AnimatePresence initial={false} mode="wait" key={pathname}>
       <div key={pathname}>{children}</div>
     </AnimatePresence>
   );
