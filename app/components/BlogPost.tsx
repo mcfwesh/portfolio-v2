@@ -14,7 +14,6 @@ import TransitionEffect from "./TransitionEffect";
 const BlogPost = ({ post, content }: { post: Items; content: string }) => {
   return (
     <>
-      <TransitionEffect />
       <div className="flex w-full flex-col items-center justify-center space-y-6">
         <h1 className=" text-center text-4xl font-bold  md:text-8xl">
           {post.title}

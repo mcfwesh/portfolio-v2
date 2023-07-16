@@ -1,5 +1,6 @@
 import About from "../components/About";
 import type { Metadata } from "next";
+import TransitionEffect from "../components/TransitionEffect";
 
 export const metadata: Metadata = {
   title: "About | Nathan Ojieabu",
@@ -8,9 +9,10 @@ export const metadata: Metadata = {
 
 const AboutPage = () => {
   return (
-    <div>
+    <>
+      <TransitionEffect />
       <About />
-    </div>
+    </>
   );
 };
 

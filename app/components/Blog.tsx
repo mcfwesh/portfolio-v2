@@ -18,7 +18,6 @@ const Blog = ({
   console.log(categorisedPosts);
   return (
     <>
-      <TransitionEffect />
       <Section title="Blog Posts" sectionId="blog-posts">
         {categorisedPosts.map((category, index) => (
           <div key={index}>

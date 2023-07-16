@@ -35,7 +35,6 @@ const singleWord = {
 const Hero = () => {
   return (
     <>
-      <TransitionEffect />
       <section
         id="hero"
         className="mx-auto flex w-full items-center justify-center"

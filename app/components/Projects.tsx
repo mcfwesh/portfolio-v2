@@ -36,7 +36,6 @@ const item = {
 const Projects = () => {
   return (
     <>
-      <TransitionEffect />
       <Section title="Projects" sectionId="projects">
         {config.projects.map((group, index) => (
           <div key={index}>

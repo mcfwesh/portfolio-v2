@@ -10,7 +10,6 @@ import TransitionEffect from "./TransitionEffect";
 const About = () => {
   return (
     <>
-      <TransitionEffect />
       <div className="flex flex-col gap-24">
         <Biography />
         <Skills />

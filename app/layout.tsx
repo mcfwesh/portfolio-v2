@@ -4,6 +4,7 @@ import { Inter, Lato } from "next/font/google";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import AnimatePages from "./components/AnimatePages";
+import Home from "./page";
 
 const inter = Inter({ subsets: ["latin"] });
 const lato = Lato({ weight: ["400", "700", "900"], subsets: ["latin"] });
@@ -11,6 +12,8 @@ const lato = Lato({ weight: ["400", "700", "900"], subsets: ["latin"] });
 type Props = {
   children: React.ReactNode;
 };
+
+const routes = [{ path: "/", component: <Home /> }];
 
 export const metadata: Metadata = {
   title: "Portfolio | Nathan Ojieabu",
