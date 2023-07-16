@@ -4,9 +4,7 @@ excerpt: The blog post describes a project that utilizes various AWS services, i
 coverImage: /assets/blog/serverless.svg
 date: '2023-06-28'
 category: Cloud
-author:
-  name: Nathan Ojieabu
-  picture: /assets/blog/serverless.svg
+author: Nathan Ojieabu
 ogImage:
   url: /assets/blog/serverless.svg
 ---

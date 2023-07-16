@@ -4,9 +4,7 @@ excerpt: The blog post showcases the reliability and efficiency of AWS Database 
 coverImage: /assets/blog/DMS.svg
 date: '2023-06-21'
 category: Cloud
-author:
-  name: Nathan Ojieabu
-  picture: /assets/blog/DMS.svg
+author: Nathan Ojieabu
 ogImage:
   url: /assets/blog/DMS.svg
 ---

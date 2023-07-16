@@ -4,9 +4,7 @@ excerpt: The blog post takes readers on a journey to evolve the architecture of 
 coverImage: /assets/blog/wordpress_evolution.svg
 date: "2023-06-22"
 category: Cloud
-author:
-  name: Nathan Ojieabu
-  picture: /assets/blog/wordpress_evolution.svg
+author: Nathan Ojieabu
 ogImage:
   url: /assets/blog/wordpress_evolution.svg
 ---

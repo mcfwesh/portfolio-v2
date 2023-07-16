@@ -20,7 +20,7 @@ const BlogPost = ({ post, content }: { post: Items; content: string }) => {
           {post.title}
         </h1>
         <div className="flex flex-col items-center space-y-1">
-          <span className="text-gray-500">{post.author.name}</span>
+          <span className="text-gray-500">{post.author}</span>
           <DateFormatter dateString={post.date} />
         </div>
 

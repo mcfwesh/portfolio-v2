@@ -4,9 +4,7 @@ excerpt: The blog post outlines the design process and implementation of a highl
 coverImage: /assets/blog/terraform_high_availability_archi.svg
 date: '2023-07-01'
 category: Cloud
-author:
-  name: Nathan Ojieabu
-  picture: /assets/blog/terraform_high_availability_archi.svg
+author: Nathan Ojieabu
 ogImage:
   url: /assets/blog/terraform_high_availability_archi.svg
 ---
