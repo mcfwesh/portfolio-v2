@@ -17,7 +17,7 @@ const Certifications = () => {
             <Link
               href={certification.certificateUrl}
               target="_blank"
-              className="mx-auto transform rounded-lg transition duration-500 ease-in-out hover:scale-110 "
+              className="mx-auto  transform rounded-lg transition duration-500 ease-in-out hover:scale-110 "
             >
               <Image
                 className=""
@@ -35,13 +35,13 @@ const Certifications = () => {
                 <Link
                   href={certification.certificateUrl}
                   target="_blank"
-                  className={` text-2xl font-bold underline underline-offset-2`}
+                  className={` text-2xl underline underline-offset-2 hover:text-sky-500`}
                 >
                   Certificate
                 </Link>
 
                 <Link
-                  className={` text-2xl font-bold underline underline-offset-2`}
+                  className={` text-2xl  underline underline-offset-2 hover:text-sky-500`}
                   href={certification.verifyUrl}
                   target="_blank"
                 >

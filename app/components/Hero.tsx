@@ -1,27 +1,46 @@
 "use client";
 import config from "../lib/config";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import Button from "./Button";
 import Link from "next/link";
+import TransitionEffect from "./TransitionEffect";
+
+const quote = {
+  initial: {
+    opacity: 1,
+  },
+  animate: {
+    opacity: 1,
+    transition: {
+      delay: 0.5,
+      staggerChildren: 0.08,
+    },
+  },
+};
+
+const singleWord = {
+  initial: {
+    opacity: 0,
+    y: 50,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1,
+    },
+  },
+};
 
 const Hero = () => {
   return (
-    <section id="hero" className="flex w-full items-center">
-      <motion.div
-        initial={{ x: -200, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{
-          delay: 0.5,
-          duration: 0.8,
-          type: "spring",
-          stiffness: 100,
-          damping: 20,
-        }}
-      >
-        <div className="flex flex-col items-center justify-between  space-y-6 md:flex-row">
+    <>
+      <TransitionEffect />
+      <section id="hero" className="flex w-full items-center">
+        <div className="flex w-full flex-col items-center justify-between   space-y-6 md:flex-row">
           <div className="relative  w-1/2 md:w-1/4">
             <svg
-              className="dar z-10 rotate-[103] transform  animate-[spin_12s_linear_infinite] fill-dark font-black uppercase text-transparent dark:fill-light "
+              className="dar z-10 rotate-[103] transform  animate-[spin_12s_linear_infinite] fill-dark font-bold uppercase text-transparent dark:fill-light "
               viewBox="0 0 200 200"
             >
               <path
@@ -47,7 +66,7 @@ const Hero = () => {
               </text>
             </svg>
             <Link
-              className="absolute left-[50%] top-[50%] h-[80%] w-[80%] translate-x-[-50%] translate-y-[-50%] transform  rounded-full bg-sky-500 text-center  hover:bg-sky-600"
+              className="absolute left-[50%] top-[50%] h-[80%] w-[80%] translate-x-[-50%] translate-y-[-50%] transform rounded-full bg-sky-500  text-center font-bold text-light  hover:bg-sky-600"
               href={config.hero.ctaSpinner.url}
             >
               <span className="absolute left-[50%] top-[50%] w-full translate-x-[-50%] translate-y-[-50%] transform text-center text-2xl">
@@ -55,17 +74,27 @@ const Hero = () => {
               </span>
             </Link>
           </div>
-          <div className="flex flex-col  md:w-1/2">
-            <div className="text-3xl font-bold md:text-6xl md:leading-[1.2]">
-              <div className="flex space-x-2">
-                <div>
-                  Hi, my name is{" "}
-                  <p className="text-blue-500">
-                    {config.name.split(" ").slice(0, -1).join()}
-                  </p>
-                </div>
-              </div>
-            </div>
+          <div className="flex flex-col  md:w-3/5">
+            <motion.h1
+              className="text-3xl font-bold md:text-6xl md:leading-[1.2]"
+              variants={quote}
+              initial="initial"
+              animate="animate"
+            >
+              {"Hi, my name is Nathan".split(" ").map((word, index) => (
+                <motion.span
+                  className={`${
+                    word === "Nathan" && "text-sky-500"
+                  } inline-block`}
+                  initial="initial"
+                  animate="animate"
+                  key={word + "-" + index}
+                  variants={singleWord}
+                >
+                  {word}&nbsp;
+                </motion.span>
+              ))}
+            </motion.h1>
             <div className="mt-8 text-justify text-sm md:text-lg">
               <p> {config.description}</p>
             </div>
@@ -75,7 +104,7 @@ const Hero = () => {
                   <Button
                     buttonClassName={
                       i === 1
-                        ? "bg-transparent underline underline-offset-2 hover:bg-transparent"
+                        ? "bg-transparent underline font-normal underline-offset-2 hover:bg-transparent"
                         : ""
                     }
                     linkClassName={
@@ -93,8 +122,8 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      </motion.div>
-    </section>
+      </section>
+    </>
   );
 };
 

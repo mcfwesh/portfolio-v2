@@ -24,7 +24,7 @@ const Button = (props: Props) => {
   return (
     <motion.div whileTap={{ scale: 0.9 }} className="w-fit">
       <button
-        className={`mt-4 inline-flex items-center rounded-md bg-blue-500 p-3 px-8 font-extrabold  text-light transition duration-150 ease-in hover:bg-blue-600  ${buttonClassName}`}
+        className={`mt-4 inline-flex items-center rounded-md bg-blue-500 p-3 px-8 font-bold  text-light transition duration-150 ease-in hover:bg-blue-600  ${buttonClassName}`}
         onClick={onClick || (() => {})}
       >
         <Link

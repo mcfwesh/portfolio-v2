@@ -1,17 +1,15 @@
 import About from "../components/About";
-import Certifications from "../components/Certifications";
-import Education from "../components/Education";
-import Experience from "../components/Experience";
-import Skills from "../components/Skills";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About | Nathan Ojieabu",
+  description: "About Nathan Ojieabu",
+};
 
 const AboutPage = () => {
   return (
-    <div className="flex flex-col gap-24">
+    <div>
       <About />
-      <Skills />
-      <Certifications />
-      <Experience />
-      <Education />
     </div>
   );
 };

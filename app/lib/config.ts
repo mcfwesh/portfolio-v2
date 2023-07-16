@@ -44,10 +44,10 @@ const config = {
   location: "Calgary, AB, Canada",
   navbar: {
     items: [
-      {
-        text: "Home",
-        url: "/",
-      },
+      // {
+      //   text: "Home",
+      //   url: "/",
+      // },
       {
         text: "About",
         url: "/about",
@@ -168,7 +168,7 @@ const config = {
       role: "Fullstack Developer",
       date: "Sep 2020 - Current",
       city: "Jülich, Germany",
-      url: "https://fz-juelich.com",
+      url: "https://www.fz-juelich.com",
       description:
         "Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization.",
     },
@@ -177,7 +177,7 @@ const config = {
       role: "Maintenance Engineer",
       date: "Jun 2019 - Aug 2019",
       city: "Belgrade, Serbia",
-      url: "https://montprojekt.com",
+      url: "https://montprojekt.rs/",
       description:
         "Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization.",
     },
@@ -205,23 +205,26 @@ const config = {
     {
       title: "AWS Certified Security - Specialty",
       verifyUrl:
-        "https://www.youracclaim.com/badges/0b5b2b7d-5b7a-4f7a-8b7a-5a4b4b4b4b4b/public_url",
+        "https://www.credly.com/badges/152fa6ad-42a0-4b0e-93ed-7f5a3a13a680/public_url",
       logo: "/assets/certifications/aws-certified-security-specialty.png",
-      certificateUrl: "https://",
+      certificateUrl:
+        "https://drive.google.com/file/d/1_h1hgpFy5ENyDOXRkbk4VdeiLdZE7LnW/view?usp=sharing",
     },
     {
       title: "AWS Certified Solutions Architect - Associate",
       verifyUrl:
-        "https://www.youracclaim.com/badges/0b5b2b7d-5b7a-4f7a-8b7a-5a4b4b4b4b4b/public_url",
+        "https://www.credly.com/badges/3d66ce06-6c48-4c83-94d6-e733195485ff/public_url",
       logo: "/assets/certifications/aws-certified-solutions-architect-associate.png",
-      certificateUrl: "https://",
+      certificateUrl:
+        "https://drive.google.com/file/d/1lVjyhn3cMsg559FRkiu6ClN1AfnK-sOA/view?usp=sharing",
     },
     {
       title: "AWS Certified Cloud Practitioner",
       verifyUrl:
-        "https://www.youracclaim.com/badges/0b5b2b7d-5b7a-4f7a-8b7a-5a4b4b4b4b4b/public_url",
+        "https://www.credly.com/badges/12ce4977-4b14-4611-af11-89545cd50dc3/linked_in_profile",
       logo: "/assets/certifications/aws-certified-cloud-practitioner.png",
-      certificateUrl: "https://",
+      certificateUrl:
+        "https://drive.google.com/file/d/1zVIK7C3dxT3AEtP77108QHhqWuOkj8QM/view?usp=sharing",
     },
   ],
   projects: [
