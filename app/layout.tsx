@@ -27,7 +27,7 @@ export default function RootLayout(props: Props) {
       >
         <Navbar />
 
-        <main className="relative  mt-16 flex w-full flex-grow items-center justify-center">
+        <main className="relative  my-16 flex w-full flex-grow items-center justify-center">
           {children}
         </main>
 

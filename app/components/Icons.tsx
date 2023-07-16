@@ -59,14 +59,15 @@ const CheckIcon = (props: Props) => {
 };
 
 const GithubIcon = (props: Props) => {
-  const { url, size = "2xl" } = props;
+  const { url, size = "1.5rem" } = props;
 
   return (
     <div>
       <FaGithub
         href={url}
+        size={size}
         data-tooltip-target="tooltip-github"
-        className={`text-${size} transition-all ease-in-out  hover:scale-110 focus:outline-none active:outline-none`}
+        className={`transition-all ease-in-out  hover:scale-110 focus:outline-none active:outline-none`}
       />
       <div
         id="tooltip-github"
@@ -146,8 +147,9 @@ const linkedinIcon = (props: Props) => {
   return (
     <div>
       <FaLinkedin
+        size="1.5rem"
         data-tooltip-target="tooltip-linkedin"
-        className="bg-light text-2xl text-[#0077b5] transition-all ease-in-out hover:scale-110 focus:outline-none"
+        className="bg-light text-[#0077b5] transition-all ease-in-out hover:scale-110 focus:outline-none"
       />
       <div
         id="tooltip-linkedin"
@@ -165,7 +167,10 @@ const MoonIcon = (props: Props) => {
   const { color, strokeWidth } = props;
 
   return (
-    <FaMoon className="text-lg transition-all ease-in-out hover:scale-150" />
+    <FaMoon
+      size="1.5rem"
+      className=" transition-all ease-in-out hover:scale-150"
+    />
   );
 };
 
@@ -186,7 +191,10 @@ const SunIcon = (props: Props) => {
   const { color, strokeWidth } = props;
 
   return (
-    <FaSun className="text-lg transition-all ease-in-out hover:scale-150" />
+    <FaSun
+      size="1.5rem"
+      className=" transition-all ease-in-out hover:scale-150"
+    />
   );
 };
 
@@ -221,7 +229,7 @@ const HamburgerIcon = ({
       onClick={() => setShowMobileMenu((prev: boolean) => !prev)}
       whileTap={{ rotate: 180 }}
     >
-      <GiHamburgerMenu className="text-2xl" />
+      <GiHamburgerMenu size="1.5rem" />
     </motion.div>
   );
 };
@@ -239,73 +247,55 @@ const CloseIcon = ({
       onClick={() => setShowMobileMenu((prev: boolean) => !prev)}
       whileTap={{ rotate: 180 }}
     >
-      <AiOutlineClose className="text-2xl " />
+      <AiOutlineClose size="1.5rem" />
     </motion.div>
   );
 };
 
-const CloudIcon = ({ size = "6xl" }: Props) => (
-  <FaCloud className={`text-${size}`} />
+const CloudIcon = ({ size = "3.5rem" }: Props) => <FaCloud size={size} />;
+
+const CodeIcon = ({ size = "3.5rem" }: Props) => <FaCode size={size} />;
+
+const AWSIcon = ({ size = "3.5rem" }: Props) => <FaAws size={size} />;
+
+const TypescriptIcon = ({ size = "3.5rem" }: Props) => (
+  <SiTypescript size={size} />
 );
 
-const CodeIcon = ({ size = "6xl" }: Props) => (
-  <FaCode className={`text-${size}`} />
+const JavascriptIcon = ({ size = "3.5rem" }: Props) => (
+  <SiJavascript size={size} />
 );
 
-const AWSIcon = ({ size = "6xl" }: Props) => (
-  <FaAws className={`text-${size}`} />
+const DockerIcon = ({ size = "3.5rem" }: Props) => <FaDocker size={size} />;
+
+const ReactIcon = ({ size = "3.5rem" }: Props) => <FaReact size={size} />;
+
+const TerraformIcon = ({ size = "3.5rem" }: Props) => (
+  <SiTerraform size={size} />
 );
 
-const TypescriptIcon = ({ size = "6xl" }: Props) => (
-  <SiTypescript className={`text-${size}`} />
+const PythonIcon = ({ size = "3.5rem" }: Props) => <FaPython size={size} />;
+
+const LinuxIcon = ({ size = "3.5rem" }: Props) => <FaLinux size={size} />;
+
+const NetworkIcon = ({ size = "3.5rem" }: Props) => (
+  <FaNetworkWired size={size} />
 );
 
-const JavascriptIcon = ({ size = "6xl" }: Props) => (
-  <SiJavascript className={`text-${size}`} />
+const NodeJsIcon = ({ size = "3.5rem" }: Props) => <FaNodeJs size={size} />;
+
+const PostgresIcon = ({ size = "3.5rem" }: Props) => (
+  <SiPostgresql size={size} />
 );
 
-const DockerIcon = ({ size = "6xl" }: Props) => (
-  <FaDocker className={`text-${size}`} />
+const MongoIcon = ({ size = "3.5rem" }: Props) => <SiMongodb size={size} />;
+
+const HandlebarsIcon = ({ size = "3.5rem" }: Props) => (
+  <SiHandlebarsdotjs size={size} />
 );
 
-const ReactIcon = ({ size = "6xl" }: Props) => (
-  <FaReact className={`text-${size}`} />
-);
-
-const TerraformIcon = ({ size = "6xl" }: Props) => (
-  <SiTerraform className={`text-${size}`} />
-);
-
-const PythonIcon = ({ size = "6xl" }: Props) => (
-  <FaPython className={`text-${size}`} />
-);
-
-const LinuxIcon = ({ size = "6xl" }: Props) => (
-  <FaLinux className={`text-${size}`} />
-);
-
-const NetworkIcon = ({ size = "6xl" }: Props) => (
-  <FaNetworkWired className={`text-${size}`} />
-);
-
-const NodeJsIcon = ({ size = "6xl" }: Props) => (
-  <FaNodeJs className={`text-${size}`} />
-);
-
-const PostgresIcon = ({ size = "6xl" }: Props) => (
-  <SiPostgresql className={`text-${size}`} />
-);
-
-const MongoIcon = ({ size = "6xl" }: Props) => (
-  <SiMongodb className={`text-${size}`} />
-);
-
-const HandlebarsIcon = ({ size = "6xl" }: Props) => (
-  <SiHandlebarsdotjs className={`text-${size}`} />
-);
-
-const HourglassIcon = ({ size = "2xl" }: Props) => (
-  <FaHourglassHalf className={`text-${size} animate-spin `} />
+const HourglassIcon = ({ size = "1.5rem" }: Props) => (
+  <FaHourglassHalf size={size} className={`animate-spin `} />
 );
 
 export {

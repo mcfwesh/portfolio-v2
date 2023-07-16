@@ -69,7 +69,7 @@ const Projects = () => {
                     <div className="flex items-center justify-center space-x-6">
                       {project.technologies.map((technology, index) => (
                         <span key={index}>
-                          {<technology.logo size="2xl" />}
+                          {<technology.logo size="1.5rem" />}
                         </span>
                       ))}
                     </div>
@@ -79,7 +79,7 @@ const Projects = () => {
                       href={project.demo ? project.demo : project.github.url}
                       target="_blank"
                     >
-                      <h5 className="h-16 text-center text-2xl font-bold tracking-tight text-gray-900 underline-offset-2 hover:underline dark:text-light">
+                      <h5 className="h-32 text-center text-2xl font-bold tracking-tight text-gray-900 underline-offset-2 hover:underline dark:text-light">
                         {project.title}
                       </h5>
                     </Link>
@@ -98,7 +98,7 @@ const Projects = () => {
                         href={project.github.url}
                         target="_blank"
                       >
-                        {<project.github.logo size="6xl" />}
+                        {<project.github.logo size="2.5rem" />}
                       </Link>
                     </div>
                   </div>

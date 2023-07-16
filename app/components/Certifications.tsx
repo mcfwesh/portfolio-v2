@@ -28,7 +28,7 @@ const Certifications = () => {
               />
             </Link>
             <div className=" mt-6 flex flex-col justify-between space-y-6">
-              <h5 className="h-16 text-center text-2xl  font-bold tracking-tight text-gray-900 underline-offset-2 hover:underline dark:text-light">
+              <h5 className="h-32 text-center text-2xl  font-bold tracking-tight text-gray-900 underline-offset-2 hover:underline dark:text-light">
                 {certification.title}
               </h5>
               <div className="mb-auto mt-auto flex items-center justify-between  ">

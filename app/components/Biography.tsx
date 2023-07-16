@@ -30,16 +30,16 @@ const AnimatedNumbers = ({ value }: { value: any }) => {
 const Biography = () => {
   return (
     <Section title="About" sectionId="about">
-      <div className="flex flex-col justify-between space-y-6  md:flex-row">
-        <div className="flex flex-col  justify-center md:w-1/2 ">
+      <div className="flex flex-col  justify-between space-y-6  md:flex-row">
+        <div className="flex flex-col   md:w-1/2 ">
           <h4 className=" font-bold text-gray-500  md:text-xl">Biography</h4>
           {config.about.description.map((paragraph, index) => (
-            <span key={index} className="mt-4 w-full text-justify ">
+            <span key={index} className="mt-4 w-full text-justify font-medium ">
               {paragraph.text}
             </span>
           ))}
         </div>
-        <div className=" flex items-center justify-center space-x-3 md:flex-col md:space-y-12">
+        <div className=" flex items-center justify-center space-x-3 md:flex-col md:space-y-6">
           {config.about.careerSummary.map((summary, index) => (
             <div
               className="flex flex-col items-center justify-center"

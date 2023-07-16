@@ -30,7 +30,7 @@ const Blog = ({
             </div>
             <div className="mx-auto my-16 grid grid-cols-1 gap-12 lg:grid-cols-2">
               {category.posts.length === 0 ? (
-                <div className="flex flex-col items-center justify-center space-y-3">
+                <div className="col-span-2 flex flex-col items-center justify-center space-y-3">
                   <HourglassIcon />
                   <span className="text-center text-2xl"> Coming soon...</span>
                 </div>
