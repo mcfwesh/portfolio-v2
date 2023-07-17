@@ -1,5 +1,5 @@
 ---
-title: Highly Available Architecture on AWS using Terraform
+title: "Highly Available Web App: AWS & Terraform Deployment"
 excerpt: The blog post outlines the design process and implementation of a highly available infrastructure on AWS using Terraform with a custom VPC, PostgreSQL RDS, autoscaling group, and load balancer for a React and Express web app.
 coverImage: /assets/blog/terraform_high_availability_archi.svg
 date: '2023-07-01'

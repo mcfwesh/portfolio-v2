@@ -35,7 +35,13 @@ const Experience = () => {
               <time className="mb-2 block  font-normal leading-none text-gray-500 dark:text-gray-400">
                 {experience.date} | {experience.city}
               </time>
-              <p className="mb-4 font-normal ">{experience.description}</p>
+              <ul>
+                {experience.description.map((item, index) => (
+                  <li className="mb-4 font-normal" key={index}>
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </li>
           ))}
         </ol>

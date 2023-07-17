@@ -35,10 +35,7 @@ const singleWord = {
 const Hero = () => {
   return (
     <>
-      <section
-        id="hero"
-        className="mx-auto flex w-full items-center justify-center"
-      >
+      <section id="hero" className="mx-auto flex  items-center justify-center">
         <div className="flex w-full flex-col items-center justify-between  space-y-6 md:flex-row">
           <div className="relative  w-1/2 md:w-1/4">
             <svg

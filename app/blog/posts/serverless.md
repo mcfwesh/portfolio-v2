@@ -1,5 +1,5 @@
 ---
-title: Serverless Application
+title: "Exploring AWS Serverless: Building Scalable Solutions with API Gateway, Lambda"
 excerpt: The blog post describes a project that utilizes various AWS services, including S3, Lambda, SES, SNS, and API Gateway, to build a serverless application that demonstrates the efficiency and versatility of serverless architecture in solving real-world challenges.
 coverImage: /assets/blog/serverless.svg
 date: '2023-06-28'

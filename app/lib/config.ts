@@ -169,8 +169,11 @@ const config = {
       date: "Sep 2020 - Current",
       city: "Jülich, Germany",
       url: "https://www.fz-juelich.com",
-      description:
-        "Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization.",
+      description: [
+        "Developing and maintaining a multi-lingual map based User Interface - “H2 Atlas Africa”, enabling interactive analysis of hydrogen production potentials in Africa using React, Docker containers, and Postgresql.",
+        "Actively engaging with 30+ local stakeholders in Africa as regards the atlas based user interface, understanding their niche requirements, and ensuring efficient coordination through a strict agile approach.",
+        "Contributed to the development of a Python web tool assessing the impact of Russia's energy embargo on German natural gas reserves. Thanks to its excellent SEO, the tool attracted over 5000 visitors in its first month.",
+      ],
     },
     {
       company: "Montprojeckt",
@@ -178,8 +181,21 @@ const config = {
       date: "Jun 2019 - Aug 2019",
       city: "Belgrade, Serbia",
       url: "https://montprojekt.rs/",
-      description:
-        "Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization.",
+      description: [
+        "Designed , lightning protection systems, fire alarms and video surveillance for private, and public facilities.",
+      ],
+    },
+    {
+      company: "AStA Rostock",
+      role: "Technical Support Assistant",
+      date: "Aug 2018 - May 2019",
+      city: "Rostock, Germany",
+      url: "https://www.asta-rostock.de/",
+      description: [
+        "Provisioned and managed AWS EC2 instances, deploying 20+ virtual servers for diverse applications.",
+        "Implemented AWS CloudWatch monitoring, saving 20% in resource costs (100+ instances).",
+        "Optimized AWS S3 architecture, reducing storage utilization by 30% and organizing 500+ GB of critical data.",
+      ],
     },
   ],
   education: [
@@ -233,10 +249,10 @@ const config = {
       logo: CloudIcon,
       projects: [
         {
-          title: "Highly Available Architecture on AWS using Terraform",
+          title: "Highly Available Web App: AWS & Terraform Deployment",
           image: TerraformProjectImage,
           github: {
-            url: "https://github.com/Nathan-Ojieabu/portfolio",
+            url: "https://github.com/mcfwesh/projects-aws/tree/main/highly-available-setup-terraform",
             logo: GithubIcon,
           },
           demo: "",
@@ -250,10 +266,11 @@ const config = {
           status: "Personal",
         },
         {
-          title: "Serverless Application",
+          title:
+            "Exploring AWS Serverless: Building Scalable Solutions with API Gateway, Lambda",
           image: ServerlessProjectImage,
           github: {
-            url: "https://github.com/Nathan-Ojieabu/portfolio",
+            url: "https://github.com/mcfwesh/projects-aws/tree/main/serverless-application",
             logo: GithubIcon,
           },
           demo: "",
@@ -265,10 +282,10 @@ const config = {
           status: "Personal",
         },
         {
-          title: "Webapp Evolution",
+          title: "Scaling WordPress: Building a Resilient Architecture",
           image: WordPressProjectImage,
           github: {
-            url: "https://github.com/Nathan-Ojieabu/portfolio",
+            url: "https://github.com/mcfwesh/projects-aws/tree/main/webapp-evolution",
             logo: GithubIcon,
           },
           demo: "",
@@ -284,7 +301,7 @@ const config = {
           title: "Database Migration from On-Premises to AWS",
           image: DMSProjectImage,
           github: {
-            url: "https://github.com/Nathan-Ojieabu/portfolio",
+            url: "https://github.com/mcfwesh/projects-aws/tree/main/DMS",
             logo: GithubIcon,
           },
           demo: "",

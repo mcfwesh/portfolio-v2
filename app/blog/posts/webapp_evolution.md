@@ -1,5 +1,5 @@
 ---
-title: Webapp Evolution
+title: "Scaling WordPress: Building a Resilient Architecture"
 excerpt: The blog post takes readers on a journey to evolve the architecture of WordPress from a manually built single instance to a scalable and resilient architecture that can handle increasing demands and ensure high availability.
 coverImage: /assets/blog/wordpress_evolution.svg
 date: "2023-06-22"
