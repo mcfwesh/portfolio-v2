@@ -170,9 +170,9 @@ const config = {
       city: "Jülich, Germany",
       url: "https://www.fz-juelich.com",
       description: [
-        "Developing and maintaining a multi-lingual map based User Interface - “H2 Atlas Africa”, enabling interactive analysis of hydrogen production potentials in Africa using React, Docker containers, and Postgresql.",
+        "Developing and maintaining a scalable and efficient OpenStack (cloud) based multilingual map UI for an interactive analysis of hydrogen production potentials in Africa, using React, Docker containers, and Postgresql.",
         "Actively engaging with 30+ local stakeholders in Africa as regards the atlas based user interface, understanding their niche requirements, and ensuring efficient coordination through a strict agile approach.",
-        "Contributed to the development of a Python web tool assessing the impact of Russia's energy embargo on German natural gas reserves. Thanks to its excellent SEO, the tool attracted over 5000 visitors in its first month.",
+        "Created an OpenStack based Python tool to analyze global energy supply disruptions, attracting 5000+ visitors in its first month through effective SEO.",
       ],
     },
     {
@@ -193,7 +193,7 @@ const config = {
       url: "https://www.asta-rostock.de/",
       description: [
         "Provisioned and managed AWS EC2 instances, deploying 20+ virtual servers for diverse applications.",
-        "Implemented AWS CloudWatch monitoring, saving 20% in resource costs (100+ instances).",
+        "Implemented AWS CloudWatch monitoring, saving 20% in resource costs.",
         "Optimized AWS S3 architecture, reducing storage utilization by 30% and organizing 500+ GB of critical data.",
       ],
     },
@@ -205,7 +205,7 @@ const config = {
       date: "2016 - 2019",
       country: "Germany",
       description:
-        "Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization.",
+        "Graduate studies in power systems and renewable energy; 3.3/4.0 GPA.",
     },
     {
       school: "University of Benin",
@@ -214,7 +214,7 @@ const config = {
       date: "2009 - 2013",
       country: "Nigeria",
       description:
-        "Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization.",
+        "Bachelor Degree (Hons) majoring in power systems; 3.5/4.0 GPA.",
     },
   ],
   certifications: [
