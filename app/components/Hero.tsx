@@ -100,22 +100,24 @@ const Hero = () => {
             <div className="mt-6 flex justify-center space-x-3 md:justify-start">
               {config.hero.cta.map(
                 (cta: { url: string; text: string }, i: number) => (
-                  <Button
-                    buttonClassName={
-                      i === 1
-                        ? "bg-transparent underline font-normal underline-offset-2 hover:bg-transparent"
-                        : ""
-                    }
-                    linkClassName={
-                      i === 1
-                        ? "text-dark dark:text-light text-lg md:text-xl"
-                        : "text-light text-lg md:text-xl"
-                    }
-                    key={i}
-                    link={cta.url}
-                  >
-                    {cta.text}
-                  </Button>
+                  <Link href={cta.url} target="_blank">
+                    <Button
+                      buttonClassName={
+                        i === 1
+                          ? "bg-transparent underline font-normal underline-offset-2 hover:bg-transparent"
+                          : ""
+                      }
+                      linkClassName={
+                        i === 1
+                          ? "text-dark dark:text-light text-lg md:text-xl"
+                          : "text-light text-lg md:text-xl"
+                      }
+                      key={i}
+                      link={cta.url}
+                    >
+                      {cta.text}
+                    </Button>
+                  </Link>
                 )
               )}
             </div>

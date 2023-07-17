@@ -66,7 +66,7 @@ const config = {
     cta: [
       {
         text: "Resume",
-        url: "mailto:nathan.ojieabu@gmail.com",
+        url: "https://drive.google.com/file/d/1IwjKYoNNzssOO0Zpiy2WoNjs009sCzG5/view?usp=drive_link",
       },
       {
         text: "Contact",
