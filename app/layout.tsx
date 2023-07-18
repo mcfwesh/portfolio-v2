@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import AnimatePages from "./components/AnimatePages";
 import Home from "./page";
+import GoogleAnalytics from "./components/GoogleAnalytics";
 
 const inter = Inter({ subsets: ["latin"] });
 const lato = Lato({ weight: ["400", "700", "900"], subsets: ["latin"] });
@@ -22,9 +23,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout(props: Props) {
   const { children } = props;
+  console.log(process.env.GA_TRACKING_ID);
 
   return (
     <html lang="en">
+      <GoogleAnalytics GA_TRACKING_ID={process.env.GA_TRACKING_ID} />
       <body
         className={`${lato.className} flex  min-h-screen w-full flex-col  bg-light px-8 pt-8 text-textDark  dark:bg-dark dark:text-light md:px-24`}
       >
