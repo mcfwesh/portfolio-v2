@@ -84,15 +84,15 @@ const config = {
     description: [
       {
         paragraph: "1",
-        text: `As a cloud security architect, I have experience in designing and implementing secure cloud architectures that balance scalability, reliability, and cost-effectiveness. I have an understanding of various cloud computing technologies, especially AWS as well as cloud security best practices including IAM, encryption, and network security.`,
+        text: `AWS Certified Architect and Security Specialist leveraging 3+ years of experience migrating workloads to AWS and improving application availability to 99.95%, while also building full stack web apps with React, Node.js, and other modern technologies. Additionally, skilled in Terraform, containers, and optimizing cloud architecture with serverless services to reduce costs by 30%. Passionate about advancing the use of AWS and modern web stacks. Seeking roles to further specialize in and utilize expertise across both cloud engineering and full stack development.`,
       },
       {
         paragraph: "2",
-        text: `In addition to my cloud expertise, I have a strong foundation and professional experience of 3+ years in full stack development with expertise in JavaScript, Typescript, and Python. I have worked with modern front-end technologies such as React, as well as backend technologies like Node.js.`,
+        text: ``,
       },
       {
         paragraph: "3",
-        text: `My passion for cloud security and full stack development has led me to specialize in the intersection of these two domains. I believe that a deep understanding of both is essential for building successful applications in the cloud. With my hybrid experience, I am confident that I can help your team build secure, scalable, and reliable cloud-based applications.`,
+        text: ``,
       },
     ],
     careerSummary: [
@@ -166,39 +166,49 @@ const config = {
     {
       company: "Forschungszentrum Jülich",
       role: "Fullstack Developer",
-      date: "Sep 2020 - Current",
-      city: "Jülich, Germany",
+      date: "July 2020 - Current",
+      city: "Remote",
       url: "https://www.fz-juelich.com",
       description: [
-        "Developing and maintaining a scalable and efficient OpenStack (cloud) based multilingual map UI for an interactive analysis of hydrogen production potentials in Africa, using React, Docker containers, and Postgresql.",
-        "Actively engaging with 30+ local stakeholders in Africa as regards the atlas based user interface, understanding their niche requirements, and ensuring efficient coordination through a strict agile approach.",
-        "Created an OpenStack based Python tool to analyze global energy supply disruptions, attracting 5000+ visitors in its first month through effective SEO.",
+        "Developed and deployed 5+ web applications, including “H2 Atlas Africa” web tool, a React-based interactive atlas analyzing hydrogen potential in Africa.",
+        "Implemented CI/CD practices, ensuring seamless deployment and minimizing downtime during updates.",
+        "Enhanced user engagement by localizing the atlas into 4 languages and integrating analytics to gain insights into user behavior and journeys.",
+        "Contributed to a web app utilizing Next.js, Flask, and a large language model (LLM) to parse and annotate PDF papers into JSON format.",
+        "Developed an interactive database with over 20+ energy ontologies, customizable visualizations, and export tools, enabling 50% time savings for energy modeling research activities.",
+      ],
+    },
+    {
+      company: "Full Stack Developer",
+      role: "Freelancer",
+      date: "May 2020 - July 2020",
+      city: "Remote",
+      url: "https://n-ojieabu.vercel.app/",
+      description: [
+        "Improved website performance by 20% through optimizing image compression and implementing browser caching for a small business client.",
+        "Led development of marketing website for local nonprofit achieving 10% increase in donations. Focused on responsive design, accessibility and SEO.",
+        "Contributed to development of React web app for early stage startup. while assisting with implementing user authentication and payment features.",
       ],
     },
     {
       company: "Montprojeckt",
       role: "Maintenance Engineer",
-      date: "Jun 2019 - Aug 2019",
-      city: "Belgrade, Serbia",
+      date: "Jul 2019 - Sep 2019",
+      city: "",
       url: "https://montprojekt.rs/",
       description: [
-        "Designed , lightning protection systems, fire alarms and video surveillance for private, and public facilities.",
-      ],
-    },
-    {
-      company: "AStA Rostock",
-      role: "Technical Support Assistant",
-      date: "Aug 2018 - May 2019",
-      city: "Rostock, Germany",
-      url: "https://www.asta-rostock.de/",
-      description: [
-        "Provisioned and managed AWS EC2 instances, deploying 20+ virtual servers for diverse applications.",
-        "Implemented AWS CloudWatch monitoring, saving 20% in resource costs.",
-        "Optimized AWS S3 architecture, reducing storage utilization by 30% and organizing 500+ GB of critical data.",
+        "Assisted with electrical layout design for 2 MW solar installation using AutoCAD.",
+        "Contributed to project planning and documentation for electrical systems of a new office building.",
       ],
     },
   ],
   education: [
+    {
+      school: "Ironhack",
+      degree: "Fullstack Web Development",
+      date: "May 2020",
+      country: "Germany",
+      description: "An intense bootcamp focused on fullstack web development",
+    },
     {
       school: "Universität Rostock",
       degree: "Masters of Science in Electrical Engineering",
@@ -211,7 +221,7 @@ const config = {
       school: "University of Benin",
       degree:
         "Bachelor of Engineering in Electrical and Electronic Engineering",
-      date: "2009 - 2013",
+      date: "2009 - 2014",
       country: "Nigeria",
       description:
         "Bachelor Degree (Hons) majoring in power systems; 3.5/4.0 GPA.",
