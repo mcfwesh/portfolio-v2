@@ -338,6 +338,7 @@ const config = {
           },
           demo: "https://africa.h2atlas.de/",
           technologies: [
+            { name: "AWS", logo: AWSIcon },
             { name: "AWS", logo: ReactIcon },
             { name: "AWS", logo: NodeJsIcon },
             { name: "AWS", logo: TypescriptIcon },
