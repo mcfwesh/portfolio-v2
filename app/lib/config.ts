@@ -37,9 +37,9 @@ const config = {
     logo: linkedinIcon,
   },
   repo: "https://github.com/Nathan-Ojieabu/portfolio",
-  role: "Cloud Security Architect",
+  role: "Full-stack Cloud Developer",
   description:
-    "As a Full-stack Cloud Security Architect, I deliver secure and scalable cloud solutions with a security focus. Check out my portfolio for more information.",
+    "As a Full-stack Cloud Developer, I deliver secure and scalable cloud solutions with a security focus. Check out my portfolio for more information.",
   phone: "+1 (587) 809-0747",
   location: "Calgary, AB, Canada",
   navbar: {
@@ -75,7 +75,7 @@ const config = {
     ],
     ctaSpinner: {
       innerText: "Hire Me",
-      outerText: "Cloud Security Architect . Fullstack .",
+      outerText: "Cloud Developer . Fullstack .",
       url: "mailto:nathan.ojieabu@gmail.com",
     },
   },
