@@ -336,7 +336,7 @@ const config = {
             url: "",
             logo: GithubIcon,
           },
-          demo: "https://africa.h2atlas.com/",
+          demo: "https://africa.h2atlas.de/",
           technologies: [
             { name: "AWS", logo: ReactIcon },
             { name: "AWS", logo: NodeJsIcon },
