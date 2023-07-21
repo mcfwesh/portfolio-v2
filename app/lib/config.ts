@@ -75,7 +75,7 @@ const config = {
     ],
     ctaSpinner: {
       innerText: "Hire Me",
-      outerText: "Cloud Developer . Fullstack .",
+      outerText: "Cloud Developer . Fullstack Developer . ",
       url: "mailto:nathan.ojieabu@gmail.com",
     },
   },

@@ -51,7 +51,7 @@ const Hero = () => {
               ></path>
               <text
                 className="text-sm "
-                wordSpacing={8}
+                wordSpacing={5}
                 letterSpacing={5}
                 textAnchor="middle"
               >
