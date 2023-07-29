@@ -354,7 +354,7 @@ const config = {
             url: "https://github.com/mcfwesh/project2-expenseapp",
             logo: GithubIcon,
           },
-          demo: "https://github.com/mcfwesh/project2-expenseapp",
+          demo: "https://expense-app-lm8h.onrender.com",
           technologies: [
             { name: "AWS", logo: HandlebarsIcon },
             { name: "AWS", logo: JavascriptIcon },
