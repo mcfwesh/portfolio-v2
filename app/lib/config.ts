@@ -351,7 +351,7 @@ const config = {
           title: "Expense App",
           image: ExpenseAppImage,
           github: {
-            url: "https://github.com/mcfwesh/project2-expenseapp",
+            url: "https://github.com/mcfwesh/expense-app",
             logo: GithubIcon,
           },
           demo: "https://expenseapp-gq0q.onrender.com",
