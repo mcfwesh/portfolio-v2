@@ -13,7 +13,7 @@ import TransitionEffect from "./TransitionEffect";
 
 const BlogPost = ({ post, content }: { post: Items; content: string }) => {
   return (
-    <>
+    <section className="max-w-screen-xl">
       <div className="flex w-full flex-col items-center justify-center space-y-6">
         <h1 className=" text-center text-4xl font-bold  md:text-8xl">
           {post.title}
@@ -37,7 +37,7 @@ const BlogPost = ({ post, content }: { post: Items; content: string }) => {
           {content}
         </ReactMarkdown>
       </div>
-    </>
+    </section>
   );
 };
 

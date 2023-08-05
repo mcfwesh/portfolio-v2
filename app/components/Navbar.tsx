@@ -41,7 +41,7 @@ const Navbar = () => {
     <div>
       {/* Desktop Navbar */}
 
-      <div className="hidden w-full items-center justify-between md:flex">
+      <div className="mx-auto hidden max-w-screen-xl items-center justify-between md:flex">
         <Link href="/">
           <Image alt="logo" width={200} height={200} src="/home/logo.png" />
         </Link>

@@ -39,7 +39,7 @@ const config = {
   repo: "https://github.com/Nathan-Ojieabu/portfolio",
   role: "Full-stack Cloud Developer",
   description:
-    "As a Full-stack Cloud Developer, I deliver secure and scalable cloud solutions with a security focus. Check out my portfolio for more information.",
+    "As a Full-stack Cloud Developer, I deliver secure and scalable cloud solutions with a security focus. Check out my projects and blog posts for more information.",
   phone: "+1 (587) 809-0747",
   location: "Calgary, AB, Canada",
   navbar: {
@@ -84,7 +84,11 @@ const config = {
     description: [
       {
         paragraph: "1",
-        text: `AWS Certified Architect and Security Specialist leveraging 3+ years of experience migrating workloads to AWS and improving application availability to 99.95%, while also building full stack web apps with React, Node.js, and other modern technologies. Additionally, skilled in Terraform, containers, and optimizing cloud architecture with serverless services to reduce costs by 30%. Passionate about advancing the use of AWS and modern web stacks. Seeking roles to further specialize in and utilize expertise across both cloud engineering and full stack development.`,
+        text: `As a full stack developer and AWS certified cloud engineer with 3+ years of experience, I deliver high-quality, scalable, and secure applications that meet customer design requirements and exceed project deadlines across various industries. With expertise in Python, Javascript, Typescript,React, Docker, and Terraform, I specialize in migrating production workloads to AWS, improving page load speeds, and reducing IT operations costs. `,
+      },
+      {
+        paragraph: "2",
+        text: `My recent certifications  in AWS Security Specialty and  AWS Solutions Architect, demonstrate my proficiency in creating efficient and secure cloud-based systems. By leading projects and driving results with a focus on scalability, availability, and security, I consistently deliver successful outcomes for my clients.`,
       },
       {
         paragraph: "2",
