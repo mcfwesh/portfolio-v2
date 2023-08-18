@@ -8,13 +8,14 @@ const Footer = () => {
   return (
     <div className="flex flex-col items-center justify-between border-t-2 py-8 text-base md:flex-row md:space-x-10 md:text-lg">
       <div>
-        <span>Built with ❤️ by </span>
+        <span>Built with ❤️ </span>
+        <span> using </span>
         <Link
           className="underline underline-offset-2"
           target="_blank"
-          href={config.github.url}
+          href="https://nextjs.org/"
         >
-          {config.name}
+          Next.js
         </Link>
       </div>
 
