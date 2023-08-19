@@ -41,7 +41,7 @@ const config = {
   description:
     "As a Full-stack Cloud Developer, I deliver secure and scalable cloud solutions with a security focus. Check out my projects and blog posts for more information.",
   phone: "+1 (587) 809-0747",
-  location: "Calgary, AB, Canada",
+  location: "Toronto, ON, Canada",
   navbar: {
     items: [
       // {
@@ -100,7 +100,7 @@ const config = {
       },
     ],
     careerSummary: [
-      { title: "Years of Experience", description: "3+" },
+      { title: "Years of Experience", description: "5+" },
       { title: "Certifications", description: "3+" },
       { title: "Projects Completed", description: "6+" },
       { title: "Articles", description: "4+" },
@@ -169,6 +169,21 @@ const config = {
   experience: [
     {
       company: "Forschungszentrum Jülich",
+      role: "Cloud Developer",
+      date: "July 2022 - Current",
+      city: "Remote",
+      url: "https://www.fz-juelich.com",
+      description: [
+        "Spearheaded the migration of 10+ production workloads to AWS, resulting in a 99.95% improvement in availability and a 30% reduction in IT operations costs.",
+        "Revolutionized the 'H2 Atlas' React app's performance by migrating it to AWS Amplify, achieving a 40% increase in page load speeds and scalability to support over 50,000 users per month.",
+        "Developed and deployed Large Language Model (LLM) web applications using AWS Lambda, DynamoDB, API Gateway, and Cloudfront, slashing hosting costs by 50% compared to traditional servers.",
+        "Migrated monoliths to microservices on AWS ECS, improving scalability and availability by 20%.",
+        "Implemented CloudTrail and AWS Config rules to detect and respond to suspicious activities 70% faster.",
+        "Efficiently managed 10+ database credentials and API keys in Secrets Manager with a 60-day rotation.",
+      ],
+    },
+    {
+      company: "Forschungszentrum Jülich",
       role: "Fullstack Developer",
       date: "July 2020 - Current",
       city: "Remote",
@@ -194,14 +209,17 @@ const config = {
       ],
     },
     {
-      company: "Montprojeckt",
-      role: "Maintenance Engineer",
-      date: "Jul 2019 - Sep 2019",
+      company: "Regal College",
+      role: "Cloud Administrator",
+      date: "Sep 2019 - Sep 2019",
       city: "",
-      url: "https://montprojekt.rs/",
+      url: "#",
       description: [
-        "Assisted with electrical layout design for 2 MW solar installation using AutoCAD.",
-        "Contributed to project planning and documentation for electrical systems of a new office building.",
+        "Migrated school website, apps, and databases to AWS in 6 months, reducing maintenance hours by 65% through automated updates and scaling.",
+        "Deployed Amazon WorkSpaces for ~220 staff and students, enabling universal file/tool access from any device.",
+        "Implemented AWS Educate program, introducing cloud computing curriculum to over 100 students annually.",
+        "Established detailed yet minimal IAM access controls for 25+ users/roles within 1 month via policies and roles.",
+        "Automated data retention for backups on AWS S3, lowering storage expenditures by 50% via lifecycle policies.",
       ],
     },
   ],
