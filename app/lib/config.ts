@@ -172,7 +172,7 @@ const config = {
       role: "Cloud Developer",
       date: "July 2022 - Current",
       city: "Remote",
-      url: "https://www.fz-juelich.com",
+      url: "https://www.fz-juelich.de",
       description: [
         "Spearheaded the migration of 10+ production workloads to AWS, resulting in a 99.95% improvement in availability and a 30% reduction in IT operations costs.",
         "Revolutionized the 'H2 Atlas' React app's performance by migrating it to AWS Amplify, achieving a 40% increase in page load speeds and scalability to support over 50,000 users per month.",
@@ -187,7 +187,7 @@ const config = {
       role: "Fullstack Developer",
       date: "July 2020 - Current",
       city: "Remote",
-      url: "https://www.fz-juelich.com",
+      url: "https://www.fz-juelich.de",
       description: [
         "Developed and deployed 5+ web applications, including “H2 Atlas Africa” web tool, a React-based interactive atlas analyzing hydrogen potential in Africa.",
         "Implemented CI/CD practices, ensuring seamless deployment and minimizing downtime during updates.",
