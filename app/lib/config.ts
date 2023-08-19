@@ -197,8 +197,8 @@ const config = {
       ],
     },
     {
-      company: "Full Stack Developer",
-      role: "Freelancer",
+      company: "Freelance",
+      role: "Full Stack Developer",
       date: "May 2020 - July 2020",
       city: "Remote",
       url: "https://n-ojieabu.vercel.app/",
@@ -212,7 +212,7 @@ const config = {
       company: "Regal College",
       role: "Cloud Administrator",
       date: "Sep 2019 - Sep 2019",
-      city: "",
+      city: "Sagamu, Nigeria",
       url: "#",
       description: [
         "Migrated school website, apps, and databases to AWS in 6 months, reducing maintenance hours by 65% through automated updates and scaling.",
