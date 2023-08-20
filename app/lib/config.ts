@@ -169,31 +169,17 @@ const config = {
   experience: [
     {
       company: "Forschungszentrum Jülich",
-      role: "Cloud Developer",
-      date: "July 2022 - Current",
-      city: "Remote",
-      url: "https://www.fz-juelich.de",
-      description: [
-        "Spearheaded the migration of 10+ production workloads to AWS, resulting in a 99.95% improvement in availability and a 30% reduction in IT operations costs.",
-        "Revolutionized the 'H2 Atlas' React app's performance by migrating it to AWS Amplify, achieving a 40% increase in page load speeds and scalability to support over 50,000 users per month.",
-        "Developed and deployed Large Language Model (LLM) web applications using AWS Lambda, DynamoDB, API Gateway, and Cloudfront, slashing hosting costs by 50% compared to traditional servers.",
-        "Migrated monoliths to microservices on AWS ECS, improving scalability and availability by 20%.",
-        "Implemented CloudTrail and AWS Config rules to detect and respond to suspicious activities 70% faster.",
-        "Efficiently managed 10+ database credentials and API keys in Secrets Manager with a 60-day rotation.",
-      ],
-    },
-    {
-      company: "Forschungszentrum Jülich",
-      role: "Fullstack Developer",
+      role: "Fullstack Cloud Developer",
       date: "July 2020 - Current",
       city: "Remote",
       url: "https://www.fz-juelich.de",
       description: [
-        "Developed and deployed 5+ web applications, including “H2 Atlas Africa” web tool, a React-based interactive atlas analyzing hydrogen potential in Africa.",
-        "Implemented CI/CD practices, ensuring seamless deployment and minimizing downtime during updates.",
-        "Enhanced user engagement by localizing the atlas into 4 languages and integrating analytics to gain insights into user behavior and journeys.",
-        "Contributed to a web app utilizing Next.js, Flask, and a large language model (LLM) to parse and annotate PDF papers into JSON format.",
-        "Developed an interactive database with over 20+ energy ontologies, customizable visualizations, and export tools, enabling 50% time savings for energy modeling research activities.",
+        "Developed and deployed the 'H2 Atlas' web tool and 5+ additional applications, including localizing the atlas into 4 languages, and integrating analytics to gain insights, increasing user engagement by 30%.",
+        "Spearheaded migrating 10+ production workloads and the 'H2 Atlas' React app to AWS Amplify, improving availability 99.95%, reducing costs 30%, and increasing the app's page load speeds 40% and scalability to support over 5,000 monthly users.",
+        "Contributed to a web app using Next.js, Flask, and an LLM to parse PDFs into JSON, reducing manual annotation time by 70%.",
+        "Developed and deployed Large Language Model (LLM) web applications using AWS Lambda, DynamoDB, API Gateway, and Cloudfront, slashing hosting costs by 50% compared to traditional servers.",
+        "Developed an interactive database with 20+ energy ontologies and tools to customize visualizations and export data, saving 50% of research time and 80% of retrieval time.",
+        "Implemented CI/CD practices and managed 10+ secrets in Secrets Manager, reducing deployment time by 50% with automated 60-day key rotation",
       ],
     },
     {
