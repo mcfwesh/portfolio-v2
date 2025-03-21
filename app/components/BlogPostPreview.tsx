@@ -10,7 +10,6 @@ type Items = {
 };
 
 export default function BlogPostPreview({ post }: { post: Items }) {
-  console.log(Nav);
   return (
     <div className="flex flex-col rounded-lg border border-gray-200 bg-light px-5  py-5 shadow-md shadow-dark dark:border-gray-700  dark:bg-gray-800 dark:shadow-light">
       <Link

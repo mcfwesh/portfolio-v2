@@ -15,7 +15,6 @@ const Blog = ({
 }: {
   categorisedPosts: CategorisedPost[];
 }) => {
-  console.log(categorisedPosts);
   return (
     <>
       <Section title="Blog Posts" sectionId="blog-posts">

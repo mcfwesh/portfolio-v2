@@ -70,7 +70,6 @@ export const getCategorisedPosts = () => {
       if (category.toLowerCase() === "fullstack development") {
         acc[1].posts.push(post);
       }
-      // console.log(acc);
       return acc;
     },
     [

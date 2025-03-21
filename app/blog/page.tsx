@@ -12,7 +12,6 @@ export const metadata: Metadata = {
 
 const BlogPage = () => {
   const categorisedPosts = getCategorisedPosts();
-  console.log(getCategorisedPosts());
 
   return (
     <>

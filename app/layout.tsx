@@ -23,7 +23,6 @@ export const metadata: Metadata = {
 
 export default function RootLayout(props: Props) {
   const { children } = props;
-  console.log(process.env.GA_TRACKING_ID);
 
   return (
     <html lang="en">
