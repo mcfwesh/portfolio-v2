@@ -1,8 +1,6 @@
 import Blog from "../components/Blog";
-import PostPreview from "../components/BlogPostPreview";
-import Section from "../components/Section";
 import TransitionEffect from "../components/TransitionEffect";
-import { Items, getAllPosts, getCategorisedPosts } from "../lib/blog-posts-api";
+import { getCategorisedPosts } from "../lib/blog-posts-api";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

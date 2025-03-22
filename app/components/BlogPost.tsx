@@ -1,15 +1,9 @@
 "use client";
 
-import { Items, getPostBySlug } from "@/app/lib/blog-posts-api";
-import markdownToHtml from "@/app/lib/markdownToHtml";
+import { Items } from "@/app/lib/blog-posts-api";
 import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
-import rehypeRaw from "rehype-raw";
 import Image from "next/image";
-import { remark } from "remark";
-import remarkToc from "remark-toc";
 import DateFormatter from "@/app/components/DateFormatter";
-import TransitionEffect from "./TransitionEffect";
 
 const BlogPost = ({ post, content }: { post: Items; content: string }) => {
   return (

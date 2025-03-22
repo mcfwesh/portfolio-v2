@@ -1,9 +1,6 @@
 import DateFormatter from "./DateFormatter";
 import Image from "next/image";
 import Link from "next/link";
-import Nav from "next/navigation";
-
-// import pic from "@/app/assets/DMS.svg";
 
 type Items = {
   [key: string]: string;

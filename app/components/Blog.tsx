@@ -2,13 +2,7 @@
 import BlogPostPreview from "@/app/components/BlogPostPreview";
 import Section from "@/app/components/Section";
 import { CloudIcon, CodeIcon, HourglassIcon } from "./Icons";
-import {
-  CategorisedPost,
-  Items,
-  getAllPosts,
-  getCategorisedPosts,
-} from "@/app/lib/blog-posts-api";
-import TransitionEffect from "./TransitionEffect";
+import { CategorisedPost } from "@/app/lib/blog-posts-api";
 
 const Blog = ({
   categorisedPosts,
