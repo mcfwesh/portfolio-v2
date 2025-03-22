@@ -20,14 +20,18 @@ import {
 } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import {
+  SiAnsible,
+  SiGrafana,
   SiHandlebarsdotjs,
   SiJavascript,
+  SiKubernetes,
   SiMongodb,
   SiPostgresql,
+  SiPrometheus,
   SiTerraform,
   SiTypescript,
 } from "react-icons/si";
-
+import { VscAzure } from "react-icons/vsc";
 interface Props {
   width?: string;
   height?: string;
@@ -290,8 +294,24 @@ const HourglassIcon = ({ size = "1.5rem" }: Props) => (
   <FaHourglassHalf size={size} className={`animate-spin `} />
 );
 
+const KubernetesIcon = ({ size = "3.5rem" }: Props) => (
+  <SiKubernetes size={size} />
+);
+
+const AnsibleIcon = ({ size = "3.5rem" }: Props) => <SiAnsible size={size} />;
+
+const PrometheusIcon = ({ size = "3.5rem" }: Props) => (
+  <SiPrometheus size={size} />
+);
+
+const GrafanaIcon = ({ size = "3.5rem" }: Props) => <SiGrafana size={size} />;
+
+const AzureIcon = ({ size = "3.5rem" }: Props) => <VscAzure size={size} />;
+
 export {
+  AnsibleIcon,
   AWSIcon,
+  AzureIcon,
   CheckIcon,
   CloseIcon,
   cloudFormationIcon,
@@ -300,11 +320,13 @@ export {
   DockerIcon,
   GithubIcon,
   globeIcon,
+  GrafanaIcon,
   HamburgerIcon,
   HandlebarsIcon,
   HeartIcon,
   HourglassIcon,
   JavascriptIcon,
+  KubernetesIcon,
   linkedinIcon,
   LinuxIcon,
   MongoIcon,
@@ -313,6 +335,7 @@ export {
   NodeJsIcon,
   PinIcon,
   PostgresIcon,
+  PrometheusIcon,
   PythonIcon,
   ReactIcon,
   SunIcon,

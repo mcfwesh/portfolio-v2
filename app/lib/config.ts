@@ -6,27 +6,30 @@ import TerraformProjectImage from "@/app/assets/terraform_high_availability_arch
 import WordPressProjectImage from "@/app/assets/wordpress_evolution.svg";
 
 import {
+  AnsibleIcon,
   AWSIcon,
+  AzureIcon,
   cloudFormationIcon,
   CloudIcon,
   CodeIcon,
   DockerIcon,
   GithubIcon,
+  GrafanaIcon,
   HandlebarsIcon,
   JavascriptIcon,
+  KubernetesIcon,
   linkedinIcon,
   LinuxIcon,
   MongoIcon,
   NetworkIcon,
   NodeJsIcon,
   PostgresIcon,
+  PrometheusIcon,
   PythonIcon,
   ReactIcon,
   TerraformIcon,
   TypescriptIcon,
 } from "../components/Icons";
-
-
 
 const config = {
   name: "Nathan Ojieabu",
@@ -44,7 +47,6 @@ const config = {
   location: "Toronto, ON, Canada",
   navbar: {
     items: [
-
       {
         text: "About",
         url: "/about",
@@ -81,26 +83,29 @@ const config = {
     description: [
       {
         paragraph: "1",
-        text: `As a full stack developer and AWS certified cloud engineer with 3+ years of experience, I deliver high-quality, scalable, and secure applications that meet customer design requirements and exceed project deadlines across various industries. With expertise in Python, Javascript, Typescript,React, Docker, and Terraform, I specialize in migrating production workloads to AWS, improving page load speeds, and reducing IT operations costs. `,
+        text: `I'm a Cloud/DevOps engineer and full stack developer—a combination that helps me create tech that's practical and user-friendly.`,
       },
       {
         paragraph: "2",
-        text: `My recent certifications  in AWS Security Specialty and  AWS Solutions Architect, demonstrate my proficiency in creating efficient and secure cloud-based systems. By leading projects and driving results with a focus on scalability, availability, and security, I consistently deliver successful outcomes for my clients.`,
-      },
-      {
-        paragraph: "2",
-        text: ``,
+        text: `On the infrastructure side, I work with AWS, Azure, and Kubernetes to build stable environments. For development, I enjoy crafting React frontends and Node.js backends, sometimes using Python too.`,
       },
       {
         paragraph: "3",
-        text: ``,
+        text: `My international background (Nigeria → Germany → Canada) has taught me to adapt and communicate clearly in any situation. I'm passionate about solving technical challenges and making technology beneficial for everyone.`,
+      },
+      {
+        paragraph: "4",
+        text: `I believe technology should simplify life, not complicate it. That's what drives my work, from infrastructure automation to user interface design. `,
       },
     ],
     careerSummary: [
-      { title: "Years of Experience", description: "5+" },
-      { title: "Certifications", description: "3+" },
-      { title: "Projects Completed", description: "6+" },
-      { title: "Articles", description: "4+" },
+      {
+        title: "Years of Experience",
+        description: new Date().getFullYear() - 2020,
+      },
+      { title: "Certifications", description: 5 },
+      { title: "Projects Completed", description: 9 },
+      { title: "Articles", description: 7 },
     ],
     cta: [
       {
@@ -111,7 +116,7 @@ const config = {
   },
   skills: [
     {
-      title: "Cloud",
+      title: "Cloud/DevOps",
       logo: CloudIcon,
       skills: [
         {
@@ -121,6 +126,10 @@ const config = {
         {
           name: " AWS Architecture",
           logo: AWSIcon,
+        },
+        {
+          name: "Azure",
+          logo: AzureIcon,
         },
         {
           name: " Networking",
@@ -133,6 +142,22 @@ const config = {
         {
           name: "Docker",
           logo: DockerIcon,
+        },
+        {
+          name: "Kubernetes",
+          logo: KubernetesIcon,
+        },
+        {
+          name: "Ansible",
+          logo: AnsibleIcon,
+        },
+        {
+          name: "Prometheus",
+          logo: PrometheusIcon,
+        },
+        {
+          name: "Grafana",
+          logo: GrafanaIcon,
         },
         {
           name: "Linux",
@@ -165,18 +190,31 @@ const config = {
   ],
   experience: [
     {
+      company: "Trycycle Data Systems",
+      role: "Fullstack Developer",
+      date: "November 2023 - Current",
+      city: "Remote",
+      url: "https://trycycle.ca/",
+      description: [
+        "Engineered digital health solutions for 500+ clinicians and patients by integrating secure Kubernetes (6 microservices) with cross-platform frameworks (React/Ionic/AppFlow), cutting vulnerabilities by 40%.",
+        "Refined Jenkins pipelines with Azure security tools, cutting deployment times by 65% and implementing checks that blocked all vulnerable code deployments.",
+        "Developed, maintained, and optimized Node.js APIs, achieving a 30% performance boost and 25% operational cost reduction by implementing serverless job processing with Azure Functions.",
+        "Developed infrastructure-as-code with Ansible and Helm, creating documentation that halved onboarding time and standardized deployment practices.",
+        "Managed critical Azure infrastructure (PostgreSQL, Logic Apps) with 99.9% uptime, while streamlining security compliance for patient-facing applications.",
+      ],
+    },
+    {
       company: "Forschungszentrum Jülich",
       role: "Fullstack Cloud Developer",
-      date: "July 2020 - Current",
+      date: "July 2020 - November 2023",
       city: "Remote",
       url: "https://www.fz-juelich.de",
       description: [
-        "Developed and deployed the 'H2 Atlas' web tool and 5+ additional applications, including localizing the atlas into 4 languages, and integrating analytics to gain insights, increasing user engagement by 30%.",
-        "Spearheaded migrating 10+ production workloads and the 'H2 Atlas' React app to AWS Amplify, improving availability 99.95%, reducing costs 30%, and increasing the app's page load speeds 40% and scalability to support over 5,000 monthly users.",
-        "Contributed to a web app using Next.js, Flask, and an LLM to parse PDFs into JSON, reducing manual annotation time by 70%.",
-        "Developed and deployed Large Language Model (LLM) web applications using AWS Lambda, DynamoDB, API Gateway, and Cloudfront, slashing hosting costs by 50% compared to traditional servers.",
-        "Developed an interactive database with 20+ energy ontologies and tools to customize visualizations and export data, saving 50% of research time and 80% of retrieval time.",
-        "Implemented CI/CD practices and managed 10+ secrets in Secrets Manager, reducing deployment time by 50% with automated 60-day key rotation",
+        "Developed and deployed the 'H2 Atlas Africa' web tool in React for Sub-Saharan Africa, localizing it in 4 languages and integrating analytics, boosting user engagement by 30%.",
+        "Migrated 10+ production workloads to AWS using Terraform scripts, achieving 99.95% availability and reducing IT costs by 30%.",
+        "Developed and deployed AI/ML microservices on EKS using Docker and Kubernetes, reducing hosting costs by 50% compared to traditional servers.",
+        "Implemented a CI/CD pipeline with Ansible and AWS CodePipeline to deploy code changes to ECS clusters, improving deployment frequency by 20%.",
+        "Streamlined security and compliance using CloudTrail, Config Rules, and Secrets Manager, detecting anomalies 70% faster through automated rotations of 10+ database secrets every 60 days.",
       ],
     },
     {
@@ -207,6 +245,13 @@ const config = {
     },
   ],
   education: [
+    {
+      school: "TechWorld With Nana",
+      degree: "DevOps Bootcamp",
+      date: "March 2023",
+      country: "Remote",
+      description: "An intense bootcamp focused on DevOps",
+    },
     {
       school: "Ironhack",
       degree: "Fullstack Web Development",
@@ -256,6 +301,22 @@ const config = {
       logo: "/assets/certifications/aws-certified-cloud-practitioner.png",
       certificateUrl:
         "https://drive.google.com/file/d/1zVIK7C3dxT3AEtP77108QHhqWuOkj8QM/view?usp=sharing",
+    },
+    {
+      title: "Azure Administrator Associate",
+      verifyUrl:
+        "https://learn.microsoft.com/api/credentials/share/en-gb/NathanOjieabu-6295/CB49CC50B267861E?sharingId=1526DA8DBE1D84AE",
+      logo: "/assets/certifications/azure-admin-associate.png",
+      certificateUrl:
+        "https://drive.google.com/file/d/13tRr1qB816lHrjob0kx9_6uhOQTVBah3/view?usp=sharing",
+    },
+    {
+      title: "Azure Fundamentals",
+      verifyUrl:
+        "https://learn.microsoft.com/api/credentials/share/en-gb/NathanOjieabu-6295/6DA2505D2A542B34?sharingId=1526DA8DBE1D84AE",
+      logo: "/assets/certifications/azure-fundamentals.png",
+      certificateUrl:
+        "https://drive.google.com/file/d/1vGFxw5UTSspumk0JcPB4oUUnE6nVuvxf/view?usp=sharing",
     },
   ],
   projects: [
