@@ -10,7 +10,7 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
-  globalIgnores(["tailwind.config.cjs", "postcss.config.cjs"]),
+  globalIgnores(["tailwind.config.cjs", "postcss.config.cjs", ".next"]),
   ...compat.config({
     extends: [
       "eslint:recommended",
@@ -20,10 +20,10 @@ const eslintConfig = [
       "next/core-web-vitals",
       "next/typescript",
     ],
-    plugins: ["simple-import-sort", "react", "react-hooks"],
+    plugins: ["simple-import-sort", "react", "react-hooks", "unused-imports"],
     rules: {
       ...reactHooks.configs.recommended.rules,
-      // "no-unused-vars": "warn",
+      "unused-imports/no-unused-imports": "warn",
       "simple-import-sort/imports": "error",
       "simple-import-sort/exports": "error",
     },
