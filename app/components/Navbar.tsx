@@ -1,41 +1,34 @@
 "use client";
-import Link from "next/link";
 import { initFlowbite } from "flowbite";
-import ThemeToggle from "./ThemeToggle";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
+
 import config from "../lib/config";
 import { CloseIcon, HamburgerIcon } from "./Icons";
-import { motion, useCycle } from "framer-motion";
-import { useState, useEffect } from "react";
-import { usePathname } from "next/navigation";
-import Image from "next/image";
-
-type Props = {
-  darkMode: boolean;
-  updateTheme: Function;
-};
+import ThemeToggle from "./ThemeToggle";
 
 const Navbar = () => {
   const path = usePathname();
-  const [darkMode, setDarkMode] = useState<boolean>(true);
+  const [darkMode, setDarkMode] = useState(false);
   const [showMobileMenu, setShowMobileMenu] = useState<boolean>(false);
-  const [selectedItem, setSelectedItem] = useState<number>(0);
 
   useEffect(() => {
     initFlowbite();
   });
 
   useEffect(() => {
-    const isDarkMode = localStorage.getItem("theme");
-    if (isDarkMode) {
-      setDarkMode(isDarkMode === "true");
-      document.documentElement.className = isDarkMode === "true" ? "dark" : "";
+    const darkModeStorage = localStorage.getItem("darkMode");
+    if (darkModeStorage) {
+      setDarkMode(true);
+      document.documentElement.className = "dark";
+    } else {
+      setDarkMode(false);
+      document.documentElement.className = "light";
     }
   }, []);
-
-  const updateTheme = (isDarkMode: boolean) => {
-    document.documentElement.className = isDarkMode ? "dark" : "";
-    setDarkMode(isDarkMode);
-  };
 
   return (
     <div>
@@ -46,7 +39,7 @@ const Navbar = () => {
           <Image alt="logo" width={200} height={200} src="/home/logo.png" />
         </Link>
         <nav className="flex flex-row items-center justify-center">
-          {config.navbar.items.map((item: any, i: number) => {
+          {config.navbar.items.map((item) => {
             const isActive = path.endsWith(item.url) || path.includes(item.url);
             return (
               <Link
@@ -75,7 +68,7 @@ const Navbar = () => {
               <span className="sr-only">Github link</span>
             </Link>
           ))}
-          <ThemeToggle darkMode={darkMode} updateTheme={updateTheme} />
+          <ThemeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
         </nav>
       </div>
 
@@ -87,7 +80,7 @@ const Navbar = () => {
         </Link>
 
         <div className=" flex items-center justify-center space-x-6">
-          <ThemeToggle darkMode={darkMode} updateTheme={updateTheme} />
+          <ThemeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
           {!showMobileMenu ? (
             <HamburgerIcon
               setShowMobileMenu={setShowMobileMenu}
@@ -103,7 +96,7 @@ const Navbar = () => {
         {showMobileMenu && (
           <nav className=" absolute left-[50%] top-[-50%] z-30 w-full translate-x-[-50%] translate-y-[15%] transform overflow-x-clip rounded-md bg-dark py-36 text-lg font-bold text-light opacity-[75%] backdrop-blur-xl dark:bg-light dark:text-dark   md:hidden">
             <div className="flex flex-col items-center justify-center">
-              {config.navbar.items.map((item: any, i: number) => {
+              {config.navbar.items.map((item) => {
                 const isActive =
                   path.endsWith(item.url) || path.includes(item.url);
                 return (

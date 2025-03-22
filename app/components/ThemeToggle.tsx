@@ -1,17 +1,25 @@
+"use client";
 import { motion } from "framer-motion";
-import { SunIcon, MoonIcon } from "./Icons";
 
-interface Props {
+import { MoonIcon, SunIcon } from "./Icons";
+
+const ThemeToggle = ({
+  darkMode,
+  setDarkMode,
+}: {
   darkMode: boolean;
-  updateTheme: Function;
-}
-
-function DarkModeToggle(props: Props) {
-  const { darkMode, updateTheme } = props;
-
+  setDarkMode: (darkMode: boolean) => void;
+}) => {
   const toggleDarkMode = () => {
-    localStorage.setItem("theme", (!darkMode).toString());
-    updateTheme(!darkMode);
+    if (darkMode) {
+      localStorage.removeItem("darkMode");
+      setDarkMode(false);
+      document.documentElement.className = "light";
+    } else {
+      localStorage.setItem("darkMode", "true");
+      setDarkMode(true);
+      document.documentElement.className = "dark";
+    }
   };
 
   return (
@@ -26,6 +34,6 @@ function DarkModeToggle(props: Props) {
       </button>
     </motion.div>
   );
-}
+};
 
-export default DarkModeToggle;
+export default ThemeToggle;
