@@ -1,7 +1,6 @@
 import React from "react";
 
 const Section = ({
-  sectionId,
   children,
   title,
 }: {

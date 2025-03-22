@@ -1,8 +1,8 @@
 "use client";
 
 import { AnimatePresence } from "framer-motion";
-import React, { Fragment } from "react";
 import { usePathname } from "next/navigation";
+import React, { Fragment } from "react";
 
 const AnimatePages = ({ children }: { children: React.ReactNode }) => {
   const pathname = usePathname();

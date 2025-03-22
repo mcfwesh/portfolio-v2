@@ -1,8 +1,6 @@
 "use client";
-import { motion } from "framer-motion";
-import Link from "next/link";
+
 import config from "../lib/config";
-import Image from "next/image";
 import Section from "./Section";
 
 const Experience = () => {

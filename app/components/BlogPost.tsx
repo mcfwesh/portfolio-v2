@@ -1,9 +1,10 @@
 "use client";
 
-import { Items } from "@/app/lib/blog-posts-api";
-import ReactMarkdown from "react-markdown";
 import Image from "next/image";
+import ReactMarkdown from "react-markdown";
+
 import DateFormatter from "@/app/components/DateFormatter";
+import { Items } from "@/app/lib/blog-posts-api";
 
 const BlogPost = ({ post, content }: { post: Items; content: string }) => {
   return (

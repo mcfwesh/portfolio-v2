@@ -1,6 +1,7 @@
-import DateFormatter from "./DateFormatter";
 import Image from "next/image";
 import Link from "next/link";
+
+import DateFormatter from "./DateFormatter";
 
 type Items = {
   [key: string]: string;

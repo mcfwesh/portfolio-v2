@@ -1,31 +1,31 @@
-import { motion, useCycle } from "framer-motion";
-import { GiHamburgerMenu } from "react-icons/gi";
+import { motion } from "framer-motion";
 import { AiOutlineClose } from "react-icons/ai";
 import {
-  FaMoon,
-  FaSun,
-  FaGithub,
-  FaTwitter,
-  FaLinkedin,
-  FaCloud,
   FaAws,
-  FaDocker,
-  FaReact,
-  FaPython,
-  FaLinux,
+  FaCloud,
   FaCode,
+  FaDocker,
+  FaGithub,
   FaHeart,
+  FaHourglassHalf,
+  FaLinkedin,
+  FaLinux,
+  FaMoon,
   FaNetworkWired,
   FaNodeJs,
-  FaHourglassHalf,
+  FaPython,
+  FaReact,
+  FaSun,
+  FaTwitter,
 } from "react-icons/fa";
+import { GiHamburgerMenu } from "react-icons/gi";
 import {
-  SiTypescript,
+  SiHandlebarsdotjs,
   SiJavascript,
-  SiTerraform,
   SiMongodb,
   SiPostgresql,
-  SiHandlebarsdotjs,
+  SiTerraform,
+  SiTypescript,
 } from "react-icons/si";
 
 interface Props {
@@ -96,7 +96,7 @@ const globeIcon = (props: Props) => {
   );
 };
 
-const cloudFormationIcon = (props: Props) => {
+const cloudFormationIcon = () => {
   return (
     <svg
       width="32"
@@ -137,13 +137,11 @@ const cloudFormationIcon = (props: Props) => {
   );
 };
 
-const HeartIcon = (props: Props) => {
+const HeartIcon = () => {
   return <FaHeart className="text-red-600" />;
 };
 
-const linkedinIcon = (props: Props) => {
-  const { width, height, color } = props;
-
+const linkedinIcon = () => {
   return (
     <div>
       <FaLinkedin
@@ -163,9 +161,7 @@ const linkedinIcon = (props: Props) => {
   );
 };
 
-const MoonIcon = (props: Props) => {
-  const { color, strokeWidth } = props;
-
+const MoonIcon = () => {
   return (
     <FaMoon
       size="1.5rem"
@@ -187,9 +183,7 @@ const PinIcon = (props: Props) => {
   );
 };
 
-const SunIcon = (props: Props) => {
-  const { color, strokeWidth } = props;
-
+const SunIcon = () => {
   return (
     <FaSun
       size="1.5rem"
@@ -211,9 +205,7 @@ const TwitchIcon = (props: Props) => {
   );
 };
 
-const TwitterIcon = (props: Props) => {
-  const { width, height, color } = props;
-
+const TwitterIcon = () => {
   return <FaTwitter />;
 };
 
@@ -221,12 +213,12 @@ const HamburgerIcon = ({
   setShowMobileMenu,
   showMobileMenu,
 }: {
-  setShowMobileMenu: Function;
+  setShowMobileMenu: (showMobileMenu: boolean) => void;
   showMobileMenu: boolean;
 }) => {
   return (
     <motion.div
-      onClick={() => setShowMobileMenu((prev: boolean) => !prev)}
+      onClick={() => setShowMobileMenu(!showMobileMenu)}
       whileTap={{ rotate: 180 }}
     >
       <GiHamburgerMenu size="1.5rem" />
@@ -238,13 +230,13 @@ const CloseIcon = ({
   setShowMobileMenu,
   showMobileMenu,
 }: {
-  setShowMobileMenu: Function;
+  setShowMobileMenu: (showMobileMenu: boolean) => void;
   showMobileMenu: boolean;
 }) => {
   return (
     <motion.div
       layout
-      onClick={() => setShowMobileMenu((prev: boolean) => !prev)}
+      onClick={() => setShowMobileMenu(!showMobileMenu)}
       whileTap={{ rotate: 180 }}
     >
       <AiOutlineClose size="1.5rem" />
@@ -299,33 +291,33 @@ const HourglassIcon = ({ size = "1.5rem" }: Props) => (
 );
 
 export {
+  AWSIcon,
   CheckIcon,
+  CloseIcon,
+  cloudFormationIcon,
+  CloudIcon,
+  CodeIcon,
+  DockerIcon,
   GithubIcon,
   globeIcon,
+  HamburgerIcon,
+  HandlebarsIcon,
   HeartIcon,
+  HourglassIcon,
+  JavascriptIcon,
   linkedinIcon,
+  LinuxIcon,
+  MongoIcon,
   MoonIcon,
+  NetworkIcon,
+  NodeJsIcon,
   PinIcon,
+  PostgresIcon,
+  PythonIcon,
+  ReactIcon,
   SunIcon,
+  TerraformIcon,
   TwitchIcon,
   TwitterIcon,
-  HamburgerIcon,
-  CloseIcon,
-  CloudIcon,
-  AWSIcon,
   TypescriptIcon,
-  JavascriptIcon,
-  DockerIcon,
-  ReactIcon,
-  TerraformIcon,
-  PythonIcon,
-  LinuxIcon,
-  CodeIcon,
-  NetworkIcon,
-  cloudFormationIcon,
-  NodeJsIcon,
-  PostgresIcon,
-  MongoIcon,
-  HandlebarsIcon,
-  HourglassIcon,
 };

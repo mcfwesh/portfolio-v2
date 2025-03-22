@@ -1,14 +1,13 @@
 "use client";
 
-import Link from "next/link";
+import { motion } from "framer-motion";
 import Image from "next/image";
-import ReactMarkdown from "react-markdown";
-import config from "../lib/config";
-import { AnimatePresence, motion } from "framer-motion";
+import Link from "next/link";
 import React from "react";
-import Section from "./Section";
+
+import config from "../lib/config";
 import Badge from "./Badge";
-import TransitionEffect from "./TransitionEffect";
+import Section from "./Section";
 
 const list = {
   hidden: { opacity: 0 },

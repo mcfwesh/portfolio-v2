@@ -1,8 +1,9 @@
 "use client";
 import BlogPostPreview from "@/app/components/BlogPostPreview";
 import Section from "@/app/components/Section";
-import { CloudIcon, CodeIcon, HourglassIcon } from "./Icons";
 import { CategorisedPost } from "@/app/lib/blog-posts-api";
+
+import { CloudIcon, CodeIcon, HourglassIcon } from "./Icons";
 
 const Blog = ({
   categorisedPosts,

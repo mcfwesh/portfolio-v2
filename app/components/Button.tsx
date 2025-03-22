@@ -1,6 +1,6 @@
 "use client";
-import Link from "next/link";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 interface Props {
   link: string;
@@ -12,14 +12,7 @@ interface Props {
 }
 
 const Button = (props: Props) => {
-  const {
-    link,
-    children,
-    externalLink,
-    onClick,
-    buttonClassName,
-    linkClassName,
-  } = props;
+  const { link, children, onClick, buttonClassName, linkClassName } = props;
 
   return (
     <motion.div whileTap={{ scale: 0.9 }} className="w-fit">

@@ -1,9 +1,9 @@
 "use client";
-import config from "../lib/config";
-import { AnimatePresence, motion } from "framer-motion";
-import Button from "./Button";
+import { motion } from "framer-motion";
 import Link from "next/link";
-import TransitionEffect from "./TransitionEffect";
+
+import config from "../lib/config";
+import Button from "./Button";
 
 const quote = {
   initial: {

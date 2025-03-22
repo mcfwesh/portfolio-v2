@@ -1,9 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import Section from "./Section";
-import config from "../lib/config";
 import Link from "next/link";
+
+import config from "../lib/config";
+import Section from "./Section";
 
 const Certifications = () => {
   return (

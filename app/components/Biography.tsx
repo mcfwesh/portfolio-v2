@@ -1,8 +1,9 @@
 "use client";
-import config from "../lib/config";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
-import Section from "./Section";
 import {  useEffect, useRef } from "react";
+
+import config from "../lib/config";
+import Section from "./Section";
 
 
 
