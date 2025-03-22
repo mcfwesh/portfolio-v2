@@ -1,32 +1,32 @@
+import DMSProjectImage from "@/app/assets/DMS.svg";
+import ExpenseAppImage from "@/app/assets/expense-app.svg";
+import H2AtlasImage from "@/app/assets/h2atlas.svg";
+import ServerlessProjectImage from "@/app/assets/serverless.svg";
+import TerraformProjectImage from "@/app/assets/terraform_high_availability_archi.svg";
+import WordPressProjectImage from "@/app/assets/wordpress_evolution.svg";
+
 import {
-  GithubIcon,
-  linkedinIcon,
-  CloudIcon,
   AWSIcon,
-  LinuxIcon,
-  DockerIcon,
-  JavascriptIcon,
-  TypescriptIcon,
-  PythonIcon,
-  TerraformIcon,
-  ReactIcon,
-  CodeIcon,
-  NetworkIcon,
   cloudFormationIcon,
-  PostgresIcon,
-  MongoIcon,
-  NodeJsIcon,
+  CloudIcon,
+  CodeIcon,
+  DockerIcon,
+  GithubIcon,
   HandlebarsIcon,
+  JavascriptIcon,
+  linkedinIcon,
+  LinuxIcon,
+  MongoIcon,
+  NetworkIcon,
+  NodeJsIcon,
+  PostgresIcon,
+  PythonIcon,
+  ReactIcon,
+  TerraformIcon,
+  TypescriptIcon,
 } from "../components/Icons";
 
-import DMSProjectImage from "@/app/assets/DMS.svg";
-import TerraformProjectImage from "@/app/assets/terraform_high_availability_archi.svg";
-import ServerlessProjectImage from "@/app/assets/serverless.svg";
-import WordPressProjectImage from "@/app/assets/wordpress_evolution.svg";
-import H2AtlasImage from "@/app/assets/h2atlas.svg";
-import ExpenseAppImage from "@/app/assets/expense-app.svg";
 
-const currentYear: number = new Date().getFullYear();
 
 const config = {
   name: "Nathan Ojieabu",
@@ -44,10 +44,7 @@ const config = {
   location: "Toronto, ON, Canada",
   navbar: {
     items: [
-      // {
-      //   text: "Home",
-      //   url: "/",
-      // },
+
       {
         text: "About",
         url: "/about",

@@ -1,10 +1,12 @@
 "use client";
 import config from "../lib/config";
-import { motion, useInView, useMotionValue, useSpring } from "framer-motion";
+import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Section from "./Section";
-import { Ref, useEffect, useRef } from "react";
+import {  useEffect, useRef } from "react";
 
-const AnimatedNumbers = ({ value }: { value: any }) => {
+
+
+const AnimatedNumbers = ({ value }: { value: string | number }) => {
   const ref = useRef<HTMLElement>(null);
   const motionValue = useMotionValue(0);
   const springValue = useSpring(motionValue, { duration: 3000 });
@@ -12,7 +14,7 @@ const AnimatedNumbers = ({ value }: { value: any }) => {
 
   useEffect(() => {
     if (isInView) {
-      motionValue.set(value);
+      motionValue.set(Number(value));
     }
   }, [isInView, value, motionValue]);
 

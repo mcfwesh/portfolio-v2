@@ -1,20 +1,18 @@
 import "./globals.css";
-import type { Metadata } from "next";
-import { Inter, Lato } from "next/font/google";
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
-import AnimatePages from "./components/AnimatePages";
-import Home from "./page";
-import GoogleAnalytics from "./components/GoogleAnalytics";
 
-const inter = Inter({ subsets: ["latin"] });
+import type { Metadata } from "next";
+import { Lato } from "next/font/google";
+
+import AnimatePages from "./components/AnimatePages";
+import Footer from "./components/Footer";
+import GoogleAnalytics from "./components/GoogleAnalytics";
+import Navbar from "./components/Navbar";
+
 const lato = Lato({ weight: ["400", "700", "900"], subsets: ["latin"] });
 
 type Props = {
   children: React.ReactNode;
 };
-
-const routes = [{ path: "/", component: <Home /> }];
 
 export const metadata: Metadata = {
   title: "Portfolio | Nathan Ojieabu",

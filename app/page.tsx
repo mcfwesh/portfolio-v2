@@ -1,6 +1,4 @@
-import AnimatePages from "./components/AnimatePages";
 import Hero from "./components/Hero";
-import TransitionEffect from "./components/TransitionEffect";
 
 const Home = () => {
   return (

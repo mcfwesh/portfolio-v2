@@ -1,5 +1,6 @@
-import Projects from "../components/Projects";
 import type { Metadata } from "next";
+
+import Projects from "../components/Projects";
 import TransitionEffect from "../components/TransitionEffect";
 
 export const metadata: Metadata = {
