@@ -9,7 +9,7 @@ type Items = {
 
 export default function BlogPostPreview({ post }: { post: Items }) {
   return (
-    <div className="flex flex-col rounded-lg border border-gray-200 bg-light px-5  py-5 shadow-md shadow-dark dark:border-gray-700  dark:bg-gray-800 dark:shadow-light">
+    <div className="flex h-full flex-col rounded-lg border border-gray-200 bg-light px-5  py-5 shadow-md shadow-dark dark:border-gray-700  dark:bg-gray-800 dark:shadow-light">
       <Link
         href={`/blog/${post.slug}`}
         className="transform rounded-lg shadow-md  transition duration-500 ease-in-out hover:scale-110 "

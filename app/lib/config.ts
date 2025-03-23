@@ -1,6 +1,7 @@
 import DMSProjectImage from "@/app/assets/DMS.svg";
 import ExpenseAppImage from "@/app/assets/expense-app.svg";
 import H2AtlasImage from "@/app/assets/h2atlas.svg";
+import KubePromGrafana from "@/app/assets/k8s-prom-grafana.svg";
 import ServerlessProjectImage from "@/app/assets/serverless.svg";
 import TerraformProjectImage from "@/app/assets/terraform_high_availability_archi.svg";
 import WordPressProjectImage from "@/app/assets/wordpress_evolution.svg";
@@ -321,9 +322,25 @@ const config = {
   ],
   projects: [
     {
-      title: "Cloud",
+      title: "Cloud/DevOps",
       logo: CloudIcon,
       projects: [
+        {
+          title: "Kubernetes Monitoring with Prometheus and Grafana",
+          image: KubePromGrafana,
+          github: {
+            url: "https://github.com/mcfwesh/Kubernetes-Monitoring-with-Prometheus-and-Grafana",
+            logo: GithubIcon,
+          },
+          demo: "",
+          technologies: [
+            { name: "AWS", logo: AWSIcon },
+            { name: "Kubernetes", logo: KubernetesIcon },
+            { name: "Prometheus", logo: PrometheusIcon },
+            { name: "Grafana", logo: GrafanaIcon },
+          ],
+          status: "Personal",
+        },
         {
           title: "Highly Available Web App: AWS & Terraform Deployment",
           image: TerraformProjectImage,

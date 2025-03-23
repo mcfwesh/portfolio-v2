@@ -4,16 +4,28 @@ type ProjectReadMeDetails = {
   coverImage: string;
   date: string;
   category: string;
+  subcategory: string;
   author: string;
-  url: string;
   slug: string;
+  repo: string;
   content?: string;
 };
 
-const GITHUB_BASE_URL =
-  "https://raw.githubusercontent.com/mcfwesh/projects-aws/refs/heads/main";
+export const GITHUB_BASE_URL = "https://raw.githubusercontent.com/mcfwesh";
 
 export const projectReadMeDetails: ProjectReadMeDetails[] = [
+  {
+    title: "Kubernetes Monitoring with Prometheus and Grafana",
+    excerpt:
+      "This project monitors a Kubernetes microservices architecture using Prometheus and Grafana. It covers microservices, Redis, and a Node.js application.",
+    coverImage: "/assets/blog/k8s-prom-grafana.svg",
+    date: "2025-03-20",
+    category: "Cloud",
+    subcategory: "DevOps",
+    author: "Nathan Ojieabu",
+    slug: "Kubernetes-Monitoring-with-Prometheus-and-Grafana",
+    repo: "Kubernetes-Monitoring-with-Prometheus-and-Grafana",
+  },
   {
     title:
       "Exploring AWS Serverless: Building Scalable Solutions with API Gateway, Lambda",
@@ -22,9 +34,10 @@ export const projectReadMeDetails: ProjectReadMeDetails[] = [
     coverImage: "/assets/blog/serverless.svg",
     date: "2023-06-28",
     category: "Cloud",
+    subcategory: "AWS",
     author: "Nathan Ojieabu",
-    url: `${GITHUB_BASE_URL}/serverless-application/README.md`,
     slug: "serverless-application",
+    repo: "projects-aws",
   },
   {
     title: "Highly Available Web App: AWS & Terraform Deployment",
@@ -33,9 +46,10 @@ export const projectReadMeDetails: ProjectReadMeDetails[] = [
     coverImage: "/assets/blog/terraform_high_availability_archi.svg",
     date: "2023-07-01",
     category: "Cloud",
+    subcategory: "AWS",
     author: "Nathan Ojieabu",
-    url: `${GITHUB_BASE_URL}/highly-available-setup-terraform/README.md`,
     slug: "highly-available-setup-terraform",
+    repo: "projects-aws",
   },
   {
     title: "Database Migration from On-Premises to AWS",
@@ -44,9 +58,10 @@ export const projectReadMeDetails: ProjectReadMeDetails[] = [
     coverImage: "/assets/blog/DMS.svg",
     date: "2023-06-21",
     category: "Cloud",
+    subcategory: "AWS",
     author: "Nathan Ojieabu",
-    url: `${GITHUB_BASE_URL}/DMS/README.md`,
     slug: "DMS",
+    repo: "projects-aws",
   },
   {
     title: "Scaling WordPress: Building a Resilient Architecture",
@@ -55,9 +70,10 @@ export const projectReadMeDetails: ProjectReadMeDetails[] = [
     coverImage: "/assets/blog/wordpress_evolution.svg",
     date: "2023-06-22",
     category: "Cloud",
+    subcategory: "AWS",
     author: "Nathan Ojieabu",
-    url: `${GITHUB_BASE_URL}/webapp-evolution/README.md`,
     slug: "webapp-evolution",
+    repo: "projects-aws",
   },
 ];
 
@@ -69,8 +85,13 @@ export const fetchGitHubContentBySlug = async (
   if (!project) {
     throw new Error(`No project found for slug: ${slug}`);
   }
-  const readmeUrl = project.url;
+  const readmeUrl =
+    project.subcategory === "AWS"
+      ? `${GITHUB_BASE_URL}/${project.repo}/refs/heads/main/${project.slug}/README.md`
+      : `${GITHUB_BASE_URL}/${project.repo}/refs/heads/github/README.md`;
+
   const res = await fetch(readmeUrl, { cache: "force-cache" });
+  console.log(readmeUrl);
 
   if (!res.ok) {
     throw new Error(`Failed to fetch file: ${res.status} ${res.statusText}`);
