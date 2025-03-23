@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import ReactMarkdown from "react-markdown";
+import remarkSlug from "remark-slug";
 
 import DateFormatter from "@/app/components/DateFormatter";
 import { Items } from "@/app/lib/blog-posts-api";
@@ -25,9 +26,8 @@ const BlogPost = ({ post, content }: { post: Items; content: string }) => {
           alt={post.title}
         />
         <ReactMarkdown
-          // remarkPlugins={[remarkGfm, remarkToc]}
-          // rehypePlugins={[rehypeRaw]}
           className="prose prose-sm w-full max-w-3xl dark:prose-invert  md:prose-lg"
+          remarkPlugins={[remarkSlug]}
         >
           {content}
         </ReactMarkdown>
