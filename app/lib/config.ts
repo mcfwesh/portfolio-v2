@@ -1,10 +1,10 @@
-import DMSProjectImage from "@/app/assets/DMS.svg";
-import ExpenseAppImage from "@/app/assets/expense-app.svg";
-import H2AtlasImage from "@/app/assets/h2atlas.svg";
-import KubePromGrafana from "@/app/assets/k8s-prom-grafana.svg";
-import ServerlessProjectImage from "@/app/assets/serverless.svg";
-import TerraformProjectImage from "@/app/assets/terraform_high_availability_archi.svg";
-import WordPressProjectImage from "@/app/assets/wordpress_evolution.svg";
+import DMSProjectImage from "@/public/assets/blog/DMS.svg";
+import KubePromGrafana from "@/public/assets/blog/k8s-prom-grafana.svg";
+import ServerlessProjectImage from "@/public/assets/blog/serverless.svg";
+import TerraformProjectImage from "@/public/assets/blog/terraform_high_availability_archi.svg";
+import WordPressProjectImage from "@/public/assets/blog/wordpress_evolution.svg";
+import ExpenseAppImage from "@/public/assets/expense-app.svg";
+import H2AtlasImage from "@/public/assets/h2atlas.svg";
 
 import {
   AnsibleIcon,
