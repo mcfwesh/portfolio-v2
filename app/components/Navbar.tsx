@@ -36,7 +36,13 @@ const Navbar = () => {
 
       <div className="mx-auto hidden max-w-screen-xl items-center justify-between md:flex">
         <Link href="/">
-          <Image alt="logo" width={200} height={200} src="/home/logo.png" />
+          <Image
+            alt="logo"
+            width={200}
+            height={200}
+            style={{ height: "auto", width: "auto" }}
+            src="/home/logo.png"
+          />
         </Link>
         <nav className="flex flex-row items-center justify-center">
           {config.navbar.items.map((item) => {
@@ -76,7 +82,13 @@ const Navbar = () => {
 
       <div className=" relative flex justify-between md:hidden">
         <Link href="/">
-          <Image alt="logo" width={150} height={150} src="/home/logo.png" />
+          <Image
+            alt="logo"
+            width={150}
+            height={150}
+            src="/home/logo.png"
+            style={{ height: "auto", width: "auto" }}
+          />
         </Link>
 
         <div className=" flex items-center justify-center space-x-6">

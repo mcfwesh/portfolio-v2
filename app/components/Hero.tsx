@@ -112,7 +112,6 @@ const Hero = () => {
                           ? "text-dark dark:text-light text-lg md:text-xl"
                           : "text-light text-lg md:text-xl"
                       }
-                      link={cta.url}
                     >
                       {cta.text}
                     </Button>

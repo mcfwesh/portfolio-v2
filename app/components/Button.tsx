@@ -1,9 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
-import Link from "next/link";
 
 interface Props {
-  link: string;
   externalLink?: boolean;
   children: React.ReactNode;
   onClick?: () => void;
@@ -12,7 +10,7 @@ interface Props {
 }
 
 const Button = (props: Props) => {
-  const { link, children, onClick, buttonClassName, linkClassName } = props;
+  const { children, onClick, buttonClassName, linkClassName } = props;
 
   return (
     <motion.div whileTap={{ scale: 0.9 }} className="w-fit">
@@ -20,9 +18,8 @@ const Button = (props: Props) => {
         className={`mt-4 inline-flex items-center rounded-md bg-blue-500 p-3 px-8 font-bold  text-light transition duration-150 ease-in hover:bg-blue-600  ${buttonClassName}`}
         onClick={onClick || (() => {})}
       >
-        <Link target="_blank" className={`${linkClassName}`} href={link}>
-          {children}
-        </Link>
+        {children}
+        <div className={`${linkClassName}`}>{children}</div>
       </button>
     </motion.div>
   );
