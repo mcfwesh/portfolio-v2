@@ -23,7 +23,9 @@ import {
   SiAnsible,
   SiGrafana,
   SiHandlebarsdotjs,
+  SiHelm,
   SiJavascript,
+  SiJenkins,
   SiKubernetes,
   SiMongodb,
   SiPostgresql,
@@ -243,6 +245,8 @@ const CodeIcon = ({ size = "3.5rem" }: Props) => <FaCode size={size} />;
 
 const AWSIcon = ({ size = "3.5rem" }: Props) => <FaAws size={size} />;
 
+const JenkinsIcon = ({ size = "3.5rem" }: Props) => <SiJenkins size={size} />;
+
 const TypescriptIcon = ({ size = "3.5rem" }: Props) => (
   <SiTypescript size={size} />
 );
@@ -258,6 +262,8 @@ const ReactIcon = ({ size = "3.5rem" }: Props) => <FaReact size={size} />;
 const TerraformIcon = ({ size = "3.5rem" }: Props) => (
   <SiTerraform size={size} />
 );
+
+const HelmIcon = ({ size = "3.5rem" }: Props) => <SiHelm size={size} />;
 
 const PythonIcon = ({ size = "3.5rem" }: Props) => <FaPython size={size} />;
 
@@ -313,8 +319,10 @@ export {
   HamburgerIcon,
   HandlebarsIcon,
   HeartIcon,
+  HelmIcon,
   HourglassIcon,
   JavascriptIcon,
+  JenkinsIcon,
   KubernetesIcon,
   linkedinIcon,
   LinuxIcon,

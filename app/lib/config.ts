@@ -1,7 +1,11 @@
+import AnsibleProjectImage from "@/public/assets/blog/ansible-jenkins.drawio.svg";
 import DMSProjectImage from "@/public/assets/blog/DMS.svg";
+import EKSECRImage from "@/public/assets/blog/eks-ecr-jenkins.drawio.svg";
 import KubePromGrafana from "@/public/assets/blog/k8s-prom-grafana.svg";
+import KubeHelmImage from "@/public/assets/blog/kube-helm.drawio.svg";
 import ServerlessProjectImage from "@/public/assets/blog/serverless.svg";
 import TerraformProjectImage from "@/public/assets/blog/terraform_high_availability_archi.svg";
+import TerraformJenkinsImage from "@/public/assets/blog/terraform-jenkins-ec2.drawio.svg";
 import WordPressProjectImage from "@/public/assets/blog/wordpress_evolution.svg";
 import ExpenseAppImage from "@/public/assets/expense-app.svg";
 import H2AtlasImage from "@/public/assets/h2atlas.svg";
@@ -17,7 +21,9 @@ import {
   GithubIcon,
   GrafanaIcon,
   HandlebarsIcon,
+  HelmIcon,
   JavascriptIcon,
+  JenkinsIcon,
   KubernetesIcon,
   linkedinIcon,
   LinuxIcon,
@@ -325,6 +331,66 @@ const config = {
       title: "Cloud/DevOps",
       logo: CloudIcon,
       projects: [
+        {
+          title: "Ansible-Driven CI/CD for AWS EC2 Deployments",
+          image: AnsibleProjectImage,
+          github: {
+            url: "https://github.com/mcfwesh/Ansible-Driven-CI-CD-Pipeline-for-Docker-Compose-on-AWS-EC2",
+            logo: GithubIcon,
+          },
+          demo: "",
+          technologies: [
+            { name: "AWS", logo: AWSIcon },
+            { name: "Ansible", logo: AnsibleIcon },
+            { name: "Jenkins", logo: JenkinsIcon },
+          ],
+          status: "Personal",
+        },
+        {
+          title: "CI/CD for AWS Infrastructure with Terraform and Jenkins",
+          image: TerraformJenkinsImage,
+          github: {
+            url: "https://github.com/mcfwesh/CI-CD-for-AWS-Infrastructure-with-Terraform-and-Jenkins",
+            logo: GithubIcon,
+          },
+          demo: "",
+          technologies: [
+            { name: "AWS", logo: AWSIcon },
+            { name: "Docker", logo: DockerIcon },
+            { name: "Terraform", logo: TerraformIcon },
+            { name: "Jenkins", logo: JenkinsIcon },
+          ],
+          status: "Personal",
+        },
+        {
+          title: "Complete CI/CD Pipeline with AWS EKS and ECR",
+          image: EKSECRImage,
+          github: {
+            url: "https://github.com/mcfwesh/Complete-CI-CD-Pipeline-with-AWS-EKS-and-ECR",
+            logo: GithubIcon,
+          },
+          demo: "",
+          technologies: [
+            { name: "AWS", logo: AWSIcon },
+            { name: "Kubernetes", logo: KubernetesIcon },
+            { name: "Jenkins", logo: JenkinsIcon },
+          ],
+          status: "Personal",
+        },
+        {
+          title: "Deploying Microservices with Kubernetes and Helm",
+          image: KubeHelmImage,
+          github: {
+            url: "https://github.com/mcfwesh/Deploying-Microservices-with-Kubernetes-and-Helm",
+            logo: GithubIcon,
+          },
+          demo: "",
+          technologies: [
+            { name: "Kubernetes", logo: KubernetesIcon },
+            { name: "Helm", logo: HelmIcon },
+          ],
+          status: "Personal",
+        },
         {
           title: "Kubernetes Monitoring with Prometheus and Grafana",
           image: KubePromGrafana,

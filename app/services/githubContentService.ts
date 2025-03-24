@@ -18,7 +18,7 @@ export const projectReadMeDetails: ProjectReadMeDetails[] = [
     title: "Ansible-Driven CI/CD for AWS EC2 Deployments",
     excerpt:
       "This project demonstrates a CI/CD pipeline using Jenkins and Ansible to deploy a Java Maven application within Docker containers on Amazon EC2 instances. It uses a dedicated Ansible server and leverages the AWS inventory plugin for dynamic EC2 discovery.",
-    coverImage: "/assets/blog/k8s-prom-grafana.svg",
+    coverImage: "/assets/blog/ansible-jenkins.drawio.svg",
     date: "2025-03-21",
     category: "Cloud",
     subcategory: "DevOps",
@@ -27,10 +27,22 @@ export const projectReadMeDetails: ProjectReadMeDetails[] = [
     repo: "Ansible-Driven-CI-CD-Pipeline-for-Docker-Compose-on-AWS-EC2",
   },
   {
+    title: "Deploying Microservices with Kubernetes and Helm",
+    excerpt:
+      "This project demonstrates deploying a microservices application using Kubernetes and Helm, progressing from basic manifests to a streamlined Helm-based approach. It uses Google's Online Boutique sample application.",
+    coverImage: "/assets/blog/kube-helm.drawio.svg",
+    date: "2025-03-20",
+    category: "Cloud",
+    subcategory: "DevOps",
+    author: "Nathan Ojieabu",
+    slug: "Deploying-Microservices-with-Kubernetes-and-Helm",
+    repo: "Deploying-Microservices-with-Kubernetes-and-Helm",
+  },
+  {
     title: "CI/CD for AWS Infrastructure with Terraform and Jenkins",
     excerpt:
       "The project provisions a VPC, EC2 instances, and deploys Docker containers. It's all managed through Terraform scripts and a Jenkins pipeline, ensuring scalability and reliability. Key AWS services are used for hosting and managing application resources.",
-    coverImage: "/assets/blog/k8s-prom-grafana.svg",
+    coverImage: "/assets/blog/terraform-jenkins-ec2.drawio.svg",
     date: "2025-03-21",
     category: "Cloud",
     subcategory: "DevOps",
@@ -42,7 +54,7 @@ export const projectReadMeDetails: ProjectReadMeDetails[] = [
     title: "Complete CI/CD Pipeline with AWS EKS and ECR",
     excerpt:
       "This project implements a complete CI/CD workflow that automatically builds a Java Maven application, packages it into a Docker container, pushes it to Amazon ECR, and deploys it to EKS. The pipeline includes version management, automated testing, and deployment verification.",
-    coverImage: "/assets/blog/k8s-prom-grafana.svg",
+    coverImage: "/assets/blog/eks-ecr-jenkins.drawio.svg",
     date: "2025-03-21",
     category: "Cloud",
     subcategory: "DevOps",
