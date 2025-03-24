@@ -21,12 +21,16 @@ const Navbar = () => {
 
   useEffect(() => {
     const darkModeStorage = localStorage.getItem("darkMode");
-    if (darkModeStorage) {
+    if (darkModeStorage === "true") {
       setDarkMode(true);
       document.documentElement.className = "dark";
-    } else {
+    } else if (darkModeStorage === "false") {
       setDarkMode(false);
       document.documentElement.className = "light";
+    } else {
+      localStorage.setItem("darkMode", "true");
+      document.documentElement.className = "dark";
+      setDarkMode(true);
     }
   }, []);
 

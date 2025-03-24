@@ -12,7 +12,7 @@ const ThemeToggle = ({
 }) => {
   const toggleDarkMode = () => {
     if (darkMode) {
-      localStorage.removeItem("darkMode");
+      localStorage.setItem("darkMode", "false");
       setDarkMode(false);
       document.documentElement.className = "light";
     } else {
