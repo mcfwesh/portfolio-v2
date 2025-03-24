@@ -70,17 +70,8 @@ const GithubIcon = (props: Props) => {
       <FaGithub
         href={url}
         size={size}
-        // data-tooltip-target="tooltip-github"
         className={`transition-all ease-in-out  hover:scale-110 focus:outline-none active:outline-none`}
       />
-      {/* <div
-        id="tooltip-github"
-        role="tooltip"
-        className="tooltip invisible absolute z-10 inline-block rounded-lg border border-gray-200 px-1.5 py-1 text-sm font-medium opacity-0 shadow-sm"
-      >
-        Github
-        <div className="tooltip-arrow" data-popper-arrow></div>
-      </div> */}
       <span className="absolute  -top-10 left-1/2 z-10  inline-block  -translate-x-1/2 rounded-lg border border-gray-200 bg-gray-100 px-1.5 py-1 text-sm font-medium opacity-0 shadow-sm group-hover:opacity-100 dark:bg-gray-700">
         Github
       </span>
@@ -153,17 +144,9 @@ const linkedinIcon = () => {
     <div className="group relative">
       <FaLinkedin
         size="1.5rem"
-        // data-tooltip-target="tooltip-linkedin"
         className="bg-light text-[#0077b5] transition-all ease-in-out hover:scale-110 focus:outline-none"
       />
-      {/* <div
-        id="tooltip-linkedin"
-        role="tooltip"
-        className="tooltip invisible absolute z-10 inline-block rounded-lg border border-gray-200 px-1.5 py-1 text-sm font-medium opacity-0 shadow-sm"
-      >
-        Linkedin
-        <div className="tooltip-arrow" data-popper-arrow></div>
-      </div> */}
+
       <span className="absolute  -top-10 left-1/2 z-10  inline-block  -translate-x-1/2 rounded-lg border border-gray-200 bg-gray-100 px-1.5 py-1 text-sm font-medium opacity-0 shadow-sm group-hover:opacity-100 dark:bg-gray-700">
         Linkedin
       </span>
