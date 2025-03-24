@@ -200,7 +200,7 @@ const config = {
       company: "Trycycle Data Systems",
       role: "Fullstack Developer",
       date: "November 2023 - Current",
-      city: "Remote",
+      city: "Ottawa, Canada",
       url: "https://trycycle.ca/",
       description: [
         "Engineered digital health solutions for 500+ clinicians and patients by integrating secure Kubernetes (6 microservices) with cross-platform frameworks (React/Ionic/AppFlow), cutting vulnerabilities by 40%.",
@@ -214,7 +214,7 @@ const config = {
       company: "Forschungszentrum Jülich",
       role: "Fullstack Cloud Developer",
       date: "July 2020 - November 2023",
-      city: "Remote",
+      city: "Jülich, Germany",
       url: "https://www.fz-juelich.de",
       description: [
         "Developed and deployed the 'H2 Atlas Africa' web tool in React for Sub-Saharan Africa, localizing it in 4 languages and integrating analytics, boosting user engagement by 30%.",
