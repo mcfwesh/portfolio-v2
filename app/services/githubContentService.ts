@@ -15,6 +15,42 @@ export const GITHUB_BASE_URL = "https://raw.githubusercontent.com/mcfwesh";
 
 export const projectReadMeDetails: ProjectReadMeDetails[] = [
   {
+    title: "Ansible-Driven CI/CD for AWS EC2 Deployments",
+    excerpt:
+      "This project demonstrates a CI/CD pipeline using Jenkins and Ansible to deploy a Java Maven application within Docker containers on Amazon EC2 instances. It uses a dedicated Ansible server and leverages the AWS inventory plugin for dynamic EC2 discovery.",
+    coverImage: "/assets/blog/k8s-prom-grafana.svg",
+    date: "2025-03-21",
+    category: "Cloud",
+    subcategory: "DevOps",
+    author: "Nathan Ojieabu",
+    slug: "Ansible-Driven-CI-CD-Pipeline-for-Docker-Compose-on-AWS-EC2",
+    repo: "Ansible-Driven-CI-CD-Pipeline-for-Docker-Compose-on-AWS-EC2",
+  },
+  {
+    title: "CI/CD for AWS Infrastructure with Terraform and Jenkins",
+    excerpt:
+      "The project provisions a VPC, EC2 instances, and deploys Docker containers. It's all managed through Terraform scripts and a Jenkins pipeline, ensuring scalability and reliability. Key AWS services are used for hosting and managing application resources.",
+    coverImage: "/assets/blog/k8s-prom-grafana.svg",
+    date: "2025-03-21",
+    category: "Cloud",
+    subcategory: "DevOps",
+    author: "Nathan Ojieabu",
+    slug: "CI-CD-for-AWS-Infrastructure-with-Terraform-and-Jenkins",
+    repo: "CI-CD-for-AWS-Infrastructure-with-Terraform-and-Jenkins",
+  },
+  {
+    title: "Complete CI/CD Pipeline with AWS EKS and ECR",
+    excerpt:
+      "This project implements a complete CI/CD workflow that automatically builds a Java Maven application, packages it into a Docker container, pushes it to Amazon ECR, and deploys it to EKS. The pipeline includes version management, automated testing, and deployment verification.",
+    coverImage: "/assets/blog/k8s-prom-grafana.svg",
+    date: "2025-03-21",
+    category: "Cloud",
+    subcategory: "DevOps",
+    author: "Nathan Ojieabu",
+    slug: "Complete-CI-CD-Pipeline-with-AWS-EKS-and-ECR",
+    repo: "Complete-CI-CD-Pipeline-with-AWS-EKS-and-ECR",
+  },
+  {
     title: "Kubernetes Monitoring with Prometheus and Grafana",
     excerpt:
       "This project monitors a Kubernetes microservices architecture using Prometheus and Grafana. It covers microservices, Redis, and a Node.js application.",
