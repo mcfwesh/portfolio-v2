@@ -72,7 +72,7 @@ const config = {
     cta: [
       {
         text: "Resume",
-        url: "https://drive.google.com/file/d/1IwjKYoNNzssOO0Zpiy2WoNjs009sCzG5/view?usp=drive_link",
+        url: "https://drive.google.com/file/d/10GuUD5F-869_0Vo3TTHViDkTisWJCjUr/view?usp=sharing",
       },
       {
         text: "Contact",
