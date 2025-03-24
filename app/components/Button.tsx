@@ -18,7 +18,6 @@ const Button = (props: Props) => {
         className={`mt-4 inline-flex items-center rounded-md bg-blue-500 p-3 px-8 font-bold  text-light transition duration-150 ease-in hover:bg-blue-600  ${buttonClassName}`}
         onClick={onClick || (() => {})}
       >
-        {children}
         <div className={`${linkClassName}`}>{children}</div>
       </button>
     </motion.div>

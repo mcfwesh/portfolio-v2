@@ -40,7 +40,7 @@ import {
 
 const config = {
   name: "Nathan Ojieabu",
-  email: "nathan.ojieabu@gmail.com",
+  email: "nathanojieabu@gmail.com",
   github: { url: "https://github.com/mcfwesh", logo: GithubIcon },
   linkedin: {
     url: "https://www.linkedin.com/in/nathanojieabu/",
@@ -76,13 +76,13 @@ const config = {
       },
       {
         text: "Contact",
-        url: "mailto:nathan.ojieabu@gmail.com",
+        url: "mailto:nathanojieabu@gmail.com",
       },
     ],
     ctaSpinner: {
       innerText: "Hire Me",
       outerText: "Cloud Developer . Fullstack Developer . ",
-      url: "mailto:nathan.ojieabu@gmail.com",
+      url: "mailto:nathanojieabu@gmail.com",
     },
   },
   about: {
